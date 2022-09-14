@@ -2,10 +2,12 @@ import React from 'react';
 import { Grid, Button, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import './Home.css';
+import Navbar from '../../components/estaticos/navbar/Navbar';
 
 function Home(){
   return (
     <>
+    <Navbar />
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
