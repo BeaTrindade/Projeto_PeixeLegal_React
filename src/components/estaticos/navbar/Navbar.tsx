@@ -1,55 +1,21 @@
-import React from 'react';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
-import { Box } from '@mui/material';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Box } from "@material-ui/core";
 import './Navbar.css';
 
 function Navbar() {
     return (
         <>
-           <AppBar position="static">
-                <Toolbar variant="dense">
-                    <Box style={{ cursor: "pointer" }} >
-                        <Typography variant="h5" color="inherit">
-                            BlogPessoal
-                        </Typography>
-                    </Box>
+            <div className="topnav1">
+                <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1019613912817221682/nomelogo.png" height={150} width={800} alt="" />
+            </div>
+            <div className="topnav">
+                <a className="active" href="#inicio">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#contato">Contato</a>
+            </div>
 
-                    <Box display="flex" justifyContent="start">
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                                home
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                                postagens
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                                temas
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                                cadastrar tema
-                            </Typography>
-                        </Box>
-                        <Link to='/login' className='text-decorator-none'>
-                            <Box mx={1} style={{ cursor: "pointer", color: "white" }}>
-                                <Typography variant="h6" color="inherit">
-                                    logout
-                                </Typography>
-                            </Box>
-                        </Link>
-
-                    </Box>
-
-                </Toolbar>
-            </AppBar>
         </>
-    )
+    );
 }
-
 export default Navbar;
