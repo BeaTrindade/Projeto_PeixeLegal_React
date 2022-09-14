@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+## Peixe Legal
+![Page](https://media.discordapp.net/attachments/1001812118422695987/1018889271853187072/logo_PLegal.png?width=549&height=535)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Quem somos:
 
-## Available Scripts
+Um site no modelo e-commerce, que possui como intuito principal, proporcionar uma interação eficaz entre pescadores artesanais de pequena escala, com acesso a recursos marinhos de qualidade, e consumidores com interesse em adquirir produtos oriundos do mar de excelente qualidade e procedência.
 
-In the project directory, you can run:
+## Como surgiu a idéia:
 
-### `npm start`
+A ideia surgiu após tomarmos conhecimento dos objetivos de desenvolvimento sustentável propostos pela ONU ao Brasil e ao mundo. A completa realização destes objetivos tem o intuito de acabar com a pobreza global, proteger o meio ambiente e o clima, e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade.
+A ODS que motivou a criação do e-commerce Peixe Legal, é a ODS 14.b - Vida na Água - Proporcionar o acesso dos pescadores artesanais de pequena escala aos recursos marinhos e mercados.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Sobre pescadores artesanais:
+A pesca artesanal é a atividade efetuada por indivíduos que vivem em determinadas comunidades e realizam atividades de pesca em pequena escala, sem visão comercial e/ou de exportação de grandes proporções.
+Essas comunidades possuem uma rica cultura, são de suma importância para a história e são um modelo de interação saudável entre o homem e a natureza.
+Os pescadores artesanais dentre as populações tradicionais, são os mais presentes em território costeiro, possuem uma uma relação intrínseca e direta com a natureza, e dependem dela para extrair recursos e sobreviver.
+Logo, necessitam de um bom funcionamento dos ecossistemas para que alcancem a produtividade ideal em suas atividades.
+No entanto, enfrentam uma série de barreiras para que consigam realizar sua atividade principal com dignidade e excelência, como: ameaças territoriais, falta de autonomia para a comercialização de seus produtos, falta de infraestrutura correta para o cumprimento da cadeia produtiva da pesca, dentre outros.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Ferramentas usadas:
+REACT  TypeScript  HTML  CSS  <br>
+C#  ASP.NET  .NET  Postman  SQL Server <br>
+VScode & VS2022 <br>
+[React documentation](https://reactjs.org/).
 
-### `npm test`
+## Authores/Desenvolvedores:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+-> ANA LOUISE COTRIM DE CIVITA <br>
+-> BEATRIZ GOMES TRINDADE <br>
+-> BRUNO PEIXOTO OLIVEIRA FRANCO <br>
+-> HENRIQUE DE ANDRADE RODRIGUES <br>
+-> JOÃO LUCAS SOARES ALMEIDA <br>
+-> JULIANA NUNES GONDIM NASCIMENTO <br>
+-> MATHEUS CARNIZELLA NEPOMUCENO <br>
+-> MAURICIO ANTÔNIO CUCILHO JUNIOR <br>
