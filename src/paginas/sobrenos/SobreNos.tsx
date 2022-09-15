@@ -1,11 +1,14 @@
 import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
+import Navbar from '../../components/estaticos/navbar/Navbar';
+import Footer from '../../components/estaticos/footer/Footer';
 import './SobreNos.css';
 
 function SobreNos() {
     return (
         <>
+        <Navbar/>
             <Grid>
                 <Box marginTop={5} marginLeft={5} marginRight={5}>
                     <Typography variant="h4" gutterBottom color="textPrimary" component="h4" align="right" className='titulo'>Quem somos?</Typography>
@@ -46,6 +49,7 @@ function SobreNos() {
                     </Box>
                 </Box>
             </Grid>
+        <Footer/>    
         </>
     );
 }
