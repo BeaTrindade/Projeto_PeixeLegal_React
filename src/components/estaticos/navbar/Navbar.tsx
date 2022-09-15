@@ -21,31 +21,31 @@ function Navbar() {
                     <a href="https://web.whatsapp.com/" target='bash3'>
                         <WhatsApp style={{ fontSize: 50 }} />
                     </a>
-                </section>           
+                </section>
 
-                <article>
+
                 <a href="/home">
-                <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1019613912817221682/nomelogo.png" height={100} width={450} alt="" />
+                    <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1019613912817221682/nomelogo.png" alt="Logo" />
                 </a>
-                </article>              
 
-                <div>
+
+                <section>
                     <a href="/cart">
                         <ShoppingCartIcon style={{ fontSize: 50 }} />
                     </a>
                     <a href="/Login">
                         <AccountCircleIcon style={{ fontSize: 50 }} />
                     </a>
-                </div>
+                </section>
             </section>
 
             <section id="topnav">
-            <div>
-                <a href="/Home">Inicio</a>
-                <a href="/Catalogo">Catálogo</a>
-                <a href="/Sobrenos">Sobre nós</a>
-                <a href="/Contato">Contato</a>
-            </div>
+
+                    <a href="/Home">Inicio</a>
+                    <a href="/Catalogo">Catálogo</a>
+                    <a href="/Sobrenos">Sobre nós</a>
+                    <a href="/Contato">Contato</a>
+
             </section>
         </main>
     );
