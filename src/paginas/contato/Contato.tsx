@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@material-ui/core";
 import './Contato.css';
-import Navbar from "../navbar/Navbar";
+import Navbar from '../../components/estaticos/navbar/Navbar';
 
 function Contato() {
     return (
