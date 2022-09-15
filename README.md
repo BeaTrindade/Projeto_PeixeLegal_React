@@ -1,3 +1,5 @@
+![Logo](https://media.discordapp.net/attachments/1001812118422695987/1019724932269228042/logo_PLegal.png?width=549&height=535)
+
 ## Quem somos:
 
 Um site no modelo e-commerce, que possui como intuito principal, proporcionar uma interação eficaz entre pescadores artesanais de pequena escala, com acesso a recursos marinhos de qualidade, e consumidores com interesse em adquirir produtos oriundos do mar de excelente qualidade e procedência.
