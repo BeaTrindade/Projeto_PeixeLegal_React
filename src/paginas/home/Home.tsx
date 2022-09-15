@@ -1,33 +1,44 @@
 import React from 'react';
-import { Grid, Button, Typography } from '@material-ui/core';
-import { Box } from '@mui/material';
-import './Home.css';
+import CarouselManipulateState from "../../components/estaticos/carousel/Carouselmani";
+import Footer from '../../components/estaticos/footer/Footer';
 import Navbar from '../../components/estaticos/navbar/Navbar';
+import CarouselCard from '../../components/carouselcard/CarouselCard' ;
+import { toast } from "react-toastify";
 
-function Home(){
-  return (
-    <>
-    <Navbar />
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titutlo'>Seja bem vindo(a)!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titutlo'>expresse aqui os seus pensamentos e opiniões!</Typography>
-                    </Box>
-                    <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                        </Box>
-                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
-                    </Box>
-                </Grid>
-                <Grid item xs={6} >
-                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
-                </Grid>
-                <Grid xs={12} className='postagens'>
-                </Grid>
-            </Grid>
-        </>
-  );
+import "./Home.css"
+
+
+function Home() {
+    const aaaa= ()=> toast.success('Notícia deletada com sucesso');
+    
+    return (
+        <main id='meiohome' >
+            <Navbar />
+            <CarouselManipulateState />
+            <button onClick={aaaa} />
+            <article id='homefoto' >
+                <a href='/temas'>
+                    <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165584342978740/caranguejo.png" />
+                <h3>Caragueijos</h3>
+                </a>
+                <a href='/temas'>
+                    <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165596472905728/camarao.png" />
+                <h3>Camarões</h3>
+                </a>
+                <a href='/temas'>
+                    <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165611475935273/doce.png" />
+                <h3>Agua Doce</h3>
+                </a>
+                <a href='/temas'>
+                    <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165634200682568/salgado.png" />
+                <h3>Agua Salgada</h3>
+                </a>
+            </article>
+            <CarouselCard />
+            <Footer />
+
+        </main>
+    );
 }
 
 export default Home;

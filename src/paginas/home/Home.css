@@ -1,18 +1,35 @@
-.caixa{
-  background-color: #3F51B5;
+#meiohome article {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  
 }
 
-.titulo{
-  color: white !important; 
-  font-weight: "bold" !important;
+
+#meiohome a:hover{
+transition: 800ms;
+  transform: scale(1.2,1.2);
 }
 
-.botao{
-  border-color: white !important;
-  background-color: #3F51B5;
-  color: white !important;
+#homefoto img {
+  width: 250px;
+  height: 250px;
+
 }
 
-.postagens{
-  background-color: white;
+#homefoto h3 {
+  color: #45c1c6;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: -50px;
+  text-shadow: 15px ;
+  font-size: 27.5px;
+}
+#homefoto a{
+  color: white;
+  
 }
