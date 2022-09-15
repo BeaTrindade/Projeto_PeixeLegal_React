@@ -17,25 +17,20 @@ export default function CarouselManipulateState() {
 
    
     ];
-
-
-
     
     const onRadioChange = (e:  React.ChangeEvent<HTMLInputElement>) => {
         setRadioState(e.currentTarget.value);
     };
 
     useEffect(() => {
-    
-        const timeout= setTimeout(() => {
-            if (count >= imagesOpt.length) {
+        setTimeout(() => {
+            if (count > imagesOpt.length) {
                 setCount(0);
             }
             setRadioState(imagesOpt[count].value);
             setCount(count + 1);
-        }, 3000);
-        return () => clearTimeout(timeout);
-    }, [count, imagesOpt]);
+        }, 7000);
+    }, [count]);
 
     return (
         <>

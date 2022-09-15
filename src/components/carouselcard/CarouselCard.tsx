@@ -30,12 +30,12 @@ export default function CarouselCard() {
 
     return (
         <>
-            <section className='slider'>
+            <section className='slider2'>
                 <label htmlFor={radioState}>
                     {imagesOpt.map(({ value: text }: any) => {
                         return (
                             <>
-                                <input type="radio" name="slide" value={text} checked={text === radioState} onChange={(e) => onRadioChange(e)} />
+                                <input type="radio" name="slide2" value={text} checked={text === radioState} onChange={(e) => onRadioChange(e)} />
                             </>
                         );
                     })}

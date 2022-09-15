@@ -1,22 +1,14 @@
 .container {
-  display: center;
+  width: 100%;
 }
 
-.container1 {
+.container1, .container2 {
+  width: 100%;
   display: flex;
-  padding-top: 100px;
-  height: 8px;
-  width: 0px;
-  padding-left: 350px;
-}
-
-.container2 {
-  padding-top: 300px;
-  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  height: 300px;
-  width: 700px;
-  padding-left: 350px;
+  margin: 100px 0px 100px 0px;
 }
 
 .img {
@@ -28,7 +20,6 @@
 }
 
 .face {
-  padding-left: 15%;
   width: 250px;
   height: 250px;
 }
