@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@material-ui/core";
-import './Contato.css';
+import './contato.css';
 import Navbar from '../../components/estaticos/navbar/Navbar';
 
 function Contato() {

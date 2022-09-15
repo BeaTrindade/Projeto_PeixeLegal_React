@@ -15,7 +15,7 @@ function Home() {
         <main id='meiohome' >
             <Navbar />
             <CarouselManipulateState />
-            <button onClick={aaaa} />
+            {/* <button onClick={aaaa} /> */}
             <article id='homefoto' >
                 <a href='/temas'>
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165584342978740/caranguejo.png" />
