@@ -27,11 +27,11 @@ function Home() {
                 </a>
                 <a href='/temas'>
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165611475935273/doce.png" />
-                    <h3>Agua Doce</h3>
+                    <h3>Água Doce</h3>
                 </a>
                 <a href='/temas'>
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165634200682568/salgado.png" />
-                    <h3>Agua Salgada</h3>
+                    <h3>Água Salgada</h3>
                 </a>
             </article>
             <CarouselCard />

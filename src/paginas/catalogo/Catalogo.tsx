@@ -28,12 +28,12 @@ function Produtos() {
 
                                 <label htmlFor="Agua Doce" className='items'>
                                     <input type="radio" name="categoria" id='Agua Doce' value="AGUA DOCE" onChange={(e) => onRadioChangeCategory(e)} />
-                                    Agua Doce
+                                    Àgua Doce
                                 </label>
                                 
                                 <label htmlFor="Agua Salgada" className='items'>
                                     <input type="radio" name="categoria" id='Agua Salgada' value="AGUA SALGADA" onChange={(e) => onRadioChangeCategory(e)} />
-                                    Agua Salgada
+                                    Àgua Salgada
                                 </label>
                                 
                                 <label htmlFor="Camarões" className='items'>
