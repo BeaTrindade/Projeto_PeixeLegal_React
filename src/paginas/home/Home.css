@@ -1,18 +1,51 @@
-.caixa{
-  background-color: #3F51B5;
+#meiohome {
+  width: 100%;
 }
 
-.titulo{
-  color: white !important; 
-  font-weight: "bold" !important;
+#meiohome article {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  
 }
 
-.botao{
-  border-color: white !important;
-  background-color: #3F51B5;
-  color: white !important;
+#meiohome article a{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
 }
 
-.postagens{
-  background-color: white;
+
+#meiohome a:hover{
+transition: 800ms;
+  transform: scale(1.2,1.2);
+}
+
+#homefoto img {
+  width: 70%;
+}
+
+#homefoto h3 {
+  color: #45c1c6;
+  font-size: 27.5px;
+}
+
+#homefoto a{
+  color: white;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  #homefoto a h3 {
+    display: none;
+  }
+
 }
