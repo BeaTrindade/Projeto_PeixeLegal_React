@@ -57,7 +57,7 @@ function Login() {
                     <label>Entrar</label>
                 </article>
 
-                <form className='formulario' onSubmit={onSubmit}>
+                <form onSubmit={onSubmit}>
 
                     <TextField value={UserLogin.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' fullWidth />
                     <TextField value={UserLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
