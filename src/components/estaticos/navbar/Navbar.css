@@ -24,13 +24,30 @@
   overflow: hidden;
 }
 
+#topnav div a{
+  opacity: 0%;
+  transition: 0ms;
+  transition: 500ms;
+}
+
+#topnav div a:hover{
+  background-color: transparent;
+}
+
+.opaco{
+  display: flex;
+  padding: 0px 5px 0px 5px;
+}
+
 #topnav a {
   color: #f2f2f2;
-  margin: 10px;
-  padding: 10px;
+  margin: 20px;
+  padding: 8px;
   text-decoration: none;
   font-size: 25px;
   transition: 500ms;
+  display: flex;
+  align-items: center;
 }
 
 #topnav a:hover {
@@ -44,28 +61,30 @@
   display: flex;
   align-items: center;
   justify-content: start;
+  padding: 0px 15px 0px 15px;
 }
 
 #icon a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 5px;
 }
 
-#icon a img{
- width: 50%;
-}
+#icon img{
+ width: 30%;
 
+}
 
 #icon section a {
-  color: black;
+  color: rgb(49, 49, 49);
   border-radius: 10px;
   transition: 600ms;
 }
 
 #icon section a:hover {
   color: white;
-  background-color: black;
+  background-color: #45C1C6;
 }
 
 #icon div a {
@@ -86,11 +105,48 @@
     align-items: center;
   }
 
+  #icon img{
+    width: 100%;
+  }
+
   #icon section {
     display: none;
   }
 
   #topnav{
     justify-content: center;
+    align-items: center;
+  }
+
+  #topnav a{
+    font-size: 0px;
+    margin: 0px 5px 0px 5px;
+  }
+
+.opaco{
+    opacity: 1;
+  }
+
+  #topnav div a{
+    opacity: 1;
+  }
+
+  #topnav a:hover {
+    transform: scale(1.15, 1.15);
+    background-color: rgb(236, 240, 245);
+    color: #45C1C6;
+  }
+
+  #topnav div a:hover{
+    border-radius: 20px;
+    background-color: rgb(236, 240, 245);
+  }
+}
+
+@media only screen and (max-width: 300px){
+  #topnav a{
+    font-size: 0px;
+    margin: 0px 0.1px 0px 0.1px;
+    padding: 6px;
   }
 }

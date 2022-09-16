@@ -79,7 +79,7 @@ function Cadastros() {
                     <label>Cadastro</label>
                 </article>
 
-                <form onSubmit={onSubmit} className='formulario'>
+                <form onSubmit={onSubmit} >
                     
                     <TextField value={UserLogin.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth />
                     <TextField value={UserLogin.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' fullWidth />

@@ -3,8 +3,11 @@ import Facebook from "@material-ui/icons/Facebook";
 import Instagram from "@material-ui/icons/Instagram";
 import WhatsApp from "@material-ui/icons/WhatsApp"
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import LoginIcon from '@mui/icons-material/Login';
+import HomeIcon from '@mui/icons-material/Home';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import CallIcon from '@mui/icons-material/Call';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 import './Navbar.css';
 
 function Navbar() {
@@ -23,11 +26,7 @@ function Navbar() {
                     </a>
                 </section>
 
-
-                <a href="/home">
-                    <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1019613912817221682/nomelogo.png" alt="Logo" />
-                </a>
-
+                <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1019613912817221682/nomelogo.png" alt="Logo" />
 
                 <section>
                     <a href="/cart">
@@ -41,10 +40,32 @@ function Navbar() {
 
             <section id="topnav">
 
-                    <a href="/Home">Inicio</a>
-                    <a href="/Catalogo">Catálogo</a>
-                    <a href="/Sobrenos">Sobre nós</a>
-                    <a href="/Contato">Contato</a>
+                <a href="/Home">
+                    Inicio <HomeIcon className="opaco" />
+                </a>
+
+                <a href="/Catalogo">
+                    Catálogo <MenuBookIcon className="opaco" />
+                </a>
+
+                <a href="/Sobrenos">
+                    Sobre nós <PeopleAltIcon className="opaco" />
+                </a>
+
+                <a href="/Contato">
+                    Contato <CallIcon className="opaco" />
+                </a>
+                <div>
+                    <a href="/cart">
+                        <ShoppingCartIcon />
+                    </a>
+                </div>
+                <div>
+                    <a href="/Login">
+                       <AccountCircleIcon /> 
+                    </a>
+                </div>
+
 
             </section>
         </main>
