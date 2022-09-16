@@ -1,18 +1,195 @@
-.box1{
-  background-color: #3F51B5; 
-  height: 120px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.box2{
-  background-color: #303F9F;
-  height: 60px;
+.foooter {
+  position: absolute;
+   width: 100%;
+  background: #45C1C6;
+  min-height: 100px;
+  padding: 50px 0px;
 }
 
-.redes{
-  font-size: 60px !important;
+/*--------Colunas ETC---------*/
+.container-footer {
+  max-width: 1400px;
+  padding: 0 4%;
+  margin: auto;
+}
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row-footer .logo img{
+  width: 230px;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
+/*--------Traço---------*/
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #ffffff;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+/*----------------------*/
+.footer-col ul {
+  list-style: none;
+}
+.footer-col ul li {
+  margin: 10px 0;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
   color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #cecdcd;
+  padding-left: 10px;
 }
 
-.textos{
-  color: white;
+/*--------Rede Sociais---------*/
+
+.footer-col .midias-socias {
+  margin-top: 30px;
 }
+.footer-col .midias-socias a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #45C1C6;
+  transition: all 0.5s ease;
+}
+.footer-col .midias-socias a i {
+  font-size: 20px;
+}
+.footer-col .midias-socias a:hover {
+  color: #ffffff;
+  background-color: #45C1C6;
+}
+
+/*--------Pagamento----------*/
+
+.tm-money {
+  display: inline-block;
+  width: 60px;
+  margin: 0 10px 10px 0;
+}
+
+/*-------Copyright--------*/
+
+.box_copyright{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+.box_copyright p{
+  margin-top: 20px;
+  color: #ffffff;
+}
+.box_copyright hr{
+  border: none;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+/*--------------Wave----------------*/
+  .waves {
+    height: 80px; /* change the height of the waves here */
+    width: 100%;
+    top: -50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+  }
+  
+  .wave {
+    background: url("https://media.discordapp.net/attachments/607999666839093248/1018345665119653959/wave.png?width=705&height=71");
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+  }
+  
+  .wave:nth-of-type(2) {
+    bottom: 0;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.5;
+  }
+  
+  .wave:nth-of-type(3) {
+    bottom: 0;
+    animation: wave 20s -1s linear infinite;
+    opacity: 0.5;
+  }
+
+/*---------Responsivo----------------*/
+
+@media (max-width: 800px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .footer-col h4::before
+  {
+    width: 0%;
+  }
+}
+@media (max-width:600px) {
+  .footer-col {
+    width: 100%;
+   
+  }
+}
+
+@keyframes wave {
+  0% {transform: translateX(0);}
+  50% {transform: translateX(-25%);}
+  100% {transform: translateX(-50%);}
+}
+
+/*-------------------------*/

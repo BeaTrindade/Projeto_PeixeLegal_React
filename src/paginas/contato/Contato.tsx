@@ -1,7 +1,9 @@
 import React from "react";
 import { Box } from "@material-ui/core";
 import './contato.css';
+import Footer from '../../components/estaticos/footer/Footer';
 import Navbar from '../../components/estaticos/navbar/Navbar';
+
 
 function Contato() {
     return (
