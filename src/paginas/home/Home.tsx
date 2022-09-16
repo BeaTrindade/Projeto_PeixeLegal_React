@@ -19,7 +19,7 @@ function Home() {
             <article id='homefoto' >
                 <a href='/temas'>
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165584342978740/caranguejo.png" />
-                    <h3>Caragueijos</h3>
+                    <h3>Caraguejos</h3>
                 </a>
                 <a href='/temas'>
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165596472905728/camarao.png" />
