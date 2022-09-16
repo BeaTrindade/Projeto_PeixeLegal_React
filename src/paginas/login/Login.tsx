@@ -1,7 +1,7 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import Box from '@mui/material/Box';
 import './Login.css'
-import Autenticar from '../../models/Autenticar';
+import Autenticar from '../../models/autenticar/Autenticar';
 import { api, login } from '../../services/Services';
 import { useNavigate, } from 'react-router-dom';
 import { toast } from 'react-toastify'
