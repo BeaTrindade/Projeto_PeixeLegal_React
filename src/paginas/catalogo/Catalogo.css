@@ -1,0 +1,32 @@
+
+#page_catalogo {
+    display: flex;
+    width: 100%;
+    background-color: yellow;
+}
+
+#page_catalogo > section:nth-child(1) {
+    background-color: pink;
+
+    width: 100%;
+
+    flex: 1 200px;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#page_catalogo > section:nth-child(2) {
+    background-color: green;
+
+    width: 100%;
+
+    flex: 1 1200px;
+
+    padding: 10px;
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
