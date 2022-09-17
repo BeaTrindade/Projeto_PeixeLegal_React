@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../../components/estaticos/footer/Footer';
 import Navbar from '../../components/estaticos/navbar/Navbar';
 import ListaComponentes from '../../components/listaComponentes/ListacComponentes';
 import './Catalogo.css'
@@ -52,6 +53,7 @@ function Produtos() {
                 </section>
 
             </div>
+            <Footer />
         </>
     );
 }
