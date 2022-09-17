@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import useLocalStorage from 'react-use-localstorage';
 import Estoque from '../../models/estoque/Estoque';
 import { busca } from '../../services/Services';
+import './ListaComponentes.css'
+
+
 
 function ListaProdutos(prop: any) {
     const [produtos, setProdutos] = useState<Estoque[]>([]);
+    const [token, setToken] = useLocalStorage('token');
 
     async function getProdutos() {
-        await busca('/api/Estoque/', setProdutos, {
-            params: {
-                produtosLista: produtos,
-                categoria: prop.categoria,
-                ordem: prop.ordem,
+        await busca('/api/Produtos', setProdutos, {
+            Headers: {
+                'Authorization': token
             }
         })
     }
