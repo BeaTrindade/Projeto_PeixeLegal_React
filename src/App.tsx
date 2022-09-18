@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Cadastro from './paginas/Cadastro/Cadastro';
+import Cadastro from './paginas/cadastro/Cadastro';
 import Home from './paginas/home/Home';
 import './App.css';
 import SobreNos from './paginas/sobrenos/SobreNos';
 import Login from './paginas/login/Login';
-import Catalogo from '../src/paginas/catalogo/Catalogo';
 import Contato from './paginas/contato/Contato';
+import Catalogo from '../src/paginas/catalogo/Catalogo';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

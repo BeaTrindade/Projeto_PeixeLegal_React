@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
-import UserLogin from '../../models/autenticar/UserLogin';
+import UserLogin from '../../models/UserLogin';
 import { api, registrar } from '../../services/Services';
 import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';

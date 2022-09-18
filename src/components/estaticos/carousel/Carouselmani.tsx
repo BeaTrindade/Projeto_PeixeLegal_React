@@ -9,11 +9,11 @@ export default function CarouselManipulateState() {
     const [count, setCount] = useState(0);
 
     const imagesOpt = [
-        { src: 'https://cdn.discordapp.com/attachments/1001812118422695987/1019668929293074463/unknown.png', value: 'Pescadores1' },
-        { src: 'https://cdn.discordapp.com/attachments/1001812118422695987/1019669120519774268/unknown.png', value: 'Pescadores2' },
-        { src: 'https://cdn.discordapp.com/attachments/1001812118422695987/1019670065706192916/unknown.png', value: 'Pescadores3' },
-        { src: 'https://cdn.discordapp.com/attachments/1001812118422695987/1019674354704994304/unknown.png', value: 'Pescadores4' },        
-        { src: 'https://cdn.discordapp.com/attachments/1001812118422695987/1019670469563142214/unknown.png', value: 'Pescadores5' },        
+        { src: 'https://media.discordapp.net/attachments/1001812118422695987/1021066185019768942/p1.png?width=1260&height=380', value: 'Pescadores1' },
+        { src: 'https://media.discordapp.net/attachments/1001812118422695987/1021066199456559104/p2.png?width=1260&height=380', value: 'Pescadores2' },
+        { src: 'https://media.discordapp.net/attachments/1001812118422695987/1021066205584437308/p3.png?width=1260&height=380', value: 'Pescadores3' },
+        { src: 'https://media.discordapp.net/attachments/1001812118422695987/1021066213117403186/p4.png?width=1260&height=380', value: 'Pescadores4' },        
+        { src: 'https://media.discordapp.net/attachments/1001812118422695987/1021066225171824720/p5.png?width=1260&height=380', value: 'Pescadores5' },        
 
    
     ];

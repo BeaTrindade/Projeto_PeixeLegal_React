@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useLocalStorage from 'react-use-localstorage';
-import Estoque from '../../models/estoque/Estoque';
+import Estoque from '../../models/Estoque';
 import { busca } from '../../services/Services';
 import { toast } from "react-toastify";
 import './ListaComponentes.css'

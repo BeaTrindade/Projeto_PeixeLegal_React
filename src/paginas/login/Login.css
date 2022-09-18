@@ -110,7 +110,29 @@
     }
 
     #user_login form{
-        width: 249px;
+        width: 250px;
 
+    }
+}
+@media only screen and (max-width: 300px) {
+    #user_login{
+        background-image: none;
+        justify-content: center;
+        align-items: center;
+        margin-right: 145px;
+    }
+
+    #user_login form{
+        width: 200px;
+    }
+
+    #user_login article{
+        display: flex;
+        justify-content: center;
+        width: 275px;
+    }
+    
+    #user_login article label{
+        margin-left: 50px;
     }
 }
