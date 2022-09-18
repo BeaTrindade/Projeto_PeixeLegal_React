@@ -21,9 +21,10 @@ function Navbar() {
     function sair() {
         setToken('')
         alert('Você deslogou sua conta!')
+        navigate('/Home')
     }
 
-    navigate('/Home')
+    
 
     if (token !== "") {
         return (

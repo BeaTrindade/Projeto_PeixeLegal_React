@@ -8,9 +8,9 @@ import './Catalogo.css'
 
 function Produtos() {
 
-    const [categoriaState, setCategoriaState] = useState('TODOS2');
+    const [categoriaState, setCategoriaState] = useState('TODOS');
 
-    const onRadioChangeCategory = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const onChangeCategory = (e: React.ChangeEvent<HTMLInputElement>) => {
         setCategoriaState(e.currentTarget.value)
         console.log(categoriaState)
     };
@@ -24,26 +24,26 @@ function Produtos() {
                 
                         <h2>Categoria</h2>
                         <label>
-                            <input type="radio" name="teste" value="TODOS2" onChange={(e) => onRadioChangeCategory(e)}  defaultChecked />
+                            <input type="radio" name="categoria" value="TODOS" onChange={(e) => onChangeCategory(e)}  defaultChecked />
                             Todos Produtos
                         </label>
 
                         <label>
-                            <input type="radio" name="teste"  onChange={(e) => onRadioChangeCategory(e)}  />
-                            Àgua Doce
+                            <input type="radio" name="categoria" value="Água doce" onChange={(e) => onChangeCategory(e)}  />
+                            Água Doce
                         </label>
 
                         <label>
-                            <input type="radio" name="teste" onChange={(e) => onRadioChangeCategory(e)}  />
-                            Àgua Salgada
+                            <input type="radio" name="categoria" value='Água salgada' onChange={(e) => onChangeCategory(e)}  />
+                            Água Salgada
                         </label>
 
                         <label>
-                            <input type="radio" name="teste" onChange={(e) => onRadioChangeCategory(e)}  />
+                            <input type="radio" name="categoria" value='Camarões' onChange={(e) => onChangeCategory(e)}  />
                             Camarões
                         </label>
                         <label>
-                            <input type="radio" name="teste"   />
+                            <input type="radio" name="categoria" value='Caranguejos' onChange={(e) => onChangeCategory(e)}  />
                             Caranguejos
                         </label>
 
