@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Footer from '../../components/estaticos/footer/Footer';
 import Navbar from '../../components/estaticos/navbar/Navbar';
-import ListaComponentes from '../../components/listaComponentes/ListaComponentes';
+import ListaProdutos from '../../components/listaComponentes/ListaComponentes';
 
 import './Catalogo.css'
 
@@ -51,7 +51,7 @@ function Produtos() {
                 </section>
 
                 <section>
-                    <ListaComponentes categoria={categoriaState} />
+                    <ListaProdutos categoria={categoriaState} />
                 </section>
 
             </div>

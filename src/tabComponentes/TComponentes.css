@@ -1,0 +1,48 @@
+.titulo{
+    font-weight: bold;
+ }
+
+ .margem{
+    margin-bottom: 50px;
+ }
+
+ .cortab{
+    background-color: #45C1C6 !important;
+    margin-bottom: 25px;
+ }
+
+ .corbarra{
+    margin: 50px !important;
+    font-size: 20px !important;
+    color: white !important;
+    transition: 500ms;
+ }
+
+ .corbarra:hover{
+    transform: scale(1.15,1.15);
+    color: black !important;
+    background-color: rgb(236, 240, 245) !important;
+    border-radius: 20px !important;
+ }
+
+ @media only screen and (max-width: 600px) {
+
+   .cortab{
+      margin-bottom: 75px;
+   }
+
+   .espaco{
+      width: 100%;
+   }
+
+   .corbarra{
+      margin: 10px !important;
+      width: 100px;
+
+   }
+   
+   .margem{
+      width: 200px;
+      height: 200px;
+   }
+ }

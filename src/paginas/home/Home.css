@@ -25,7 +25,7 @@
 
 
 #meiohome a:hover{
-transition: 800ms;
+  transition: 800ms;
   transform: scale(1.2,1.2);
 }
 

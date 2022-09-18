@@ -1,11 +1,11 @@
 interface Estoque {
     id_Produtos: number,
     produto?: string,
-    descricao: string
+    descricao?: string
     categoria?: string,
     valor?: string,
     quantidade?: string,
-    url_Imagem?: string,
+    url_Imagem?: string
 }
 
 export default Estoque;
