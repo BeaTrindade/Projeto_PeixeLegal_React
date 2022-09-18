@@ -135,6 +135,7 @@ function Contato() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
     );
 }
