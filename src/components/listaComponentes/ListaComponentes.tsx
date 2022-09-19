@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { ChangeEvent, useEffect, useState } from 'react';
 import useLocalStorage from 'react-use-localstorage';
 import Estoque from '../../models/Estoque';
 import { busca } from '../../services/Services';
@@ -8,7 +8,12 @@ import './ListaComponentes.css'
 function ListaProdutos(props: any) {
     const [produtos, setProdutos] = useState<Estoque[]>([]);
     const [token, setToken] = useLocalStorage('token');
-    const Addcarrinho = () => toast.success('Produto adicionado ao carrinho');
+    const Addcarrinho = () => {
+
+        toast.success('Produto adicionado ao carrinho');
+    }
+
+
 
     async function getProdutos() {
         await busca('/api/Produtos', setProdutos, {
@@ -19,6 +24,7 @@ function ListaProdutos(props: any) {
     }
 
     useEffect(() => {
+
         getProdutos()
     }, [produtos.length])
 
