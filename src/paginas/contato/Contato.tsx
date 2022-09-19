@@ -10,6 +10,7 @@ function Contato() {
     return (
         <>
         <Navbar/>
+        <div className='peixinhoO'>
             <main id='contato'>
             <article>
                     <img src="https://media.discordapp.net/attachments/1001946461010923520/1021411402277208115/profile-pic_2.png?width=406&height=406" alt="Ana Lu" />
@@ -124,6 +125,7 @@ function Contato() {
                     <h4>Preferência de Back-End.</h4>
                 </article>             
             </main>
+            </div>
             <Footer/>
         </>
     );

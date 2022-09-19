@@ -1,3 +1,7 @@
+.peixinhoO{
+    background: url('https://media.discordapp.net/attachments/607999666839093248/1021486576057974864/peixeclaro.png?width=902&height=432');
+  }
+
 #contato {
     width: 100%;
     flex-wrap: wrap;
@@ -7,17 +11,6 @@
     flex-direction: row;
     margin-bottom: 150px;
     padding: 20px 20px 20px 20px;
-}
-
-#equipe {
-    background-color: rgb(227, 255, 248);
-    color: #45C1C6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    margin-bottom: -75px;
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.685) !important;
 }
 
 #contato article {
@@ -39,9 +32,9 @@
 
 #contato article img:hover {
     opacity: 0.1;
-    rotate: 360deg;
-    transform: scale(0.9, 0.9);
-    z-index: -1 !important;
+    transform: rotateY(180deg);
+    z-index: 0;
+  
 }
 
 #contato article div {

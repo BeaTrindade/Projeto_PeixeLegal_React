@@ -9,6 +9,7 @@ function SobreNos() {
     return (
         <>
         <Navbar/>
+        <Box className='peixinhoOo'>
             <Grid>
                 <Box marginTop={5} marginLeft={10} marginRight={10}>
                     <Typography variant="h4" gutterBottom color="textPrimary" component="h4" align="right" className='tituloN'>Quem somos?</Typography>
@@ -49,6 +50,7 @@ function SobreNos() {
                     </Box>
                 </Box>
             </Grid>
+            </Box>
         <Footer/>    
         </>
     );
