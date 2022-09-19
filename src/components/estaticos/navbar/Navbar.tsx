@@ -63,23 +63,23 @@ function Navbar() {
                 <section id="topnav">
 
                     <a href="/Home">
-                        Inicio <HomeIcon className="opaco" />
+                        Inicio <HomeIcon className="opaco" style={{ fontSize: 30 }} />
                     </a>
 
                     <a href="/Catalogo">
-                        Catálogo <MenuBookIcon className="opaco" />
+                        Catálogo <MenuBookIcon className="opaco" style={{ fontSize: 30 }}/>
                     </a>
 
                     <a href="/Sobrenos">
-                        Sobre nós <PeopleAltIcon className="opaco" />
+                        Sobre nós <PeopleAltIcon className="opaco" style={{ fontSize: 30 }}/>
                     </a>
 
                     <a href="/Contato">
-                        Contato <CallIcon className="opaco" />
+                        Contato <CallIcon className="opaco" style={{ fontSize: 30 }}/>
                     </a>
                     <div>
                         <a href="/cart">
-                            <ShoppingCartIcon className="opaco" />
+                            <ShoppingCartIcon className="opaco" style={{ fontSize: 30 }}/>
                         </a>
                     </div>
                     <div>
@@ -112,7 +112,7 @@ function Navbar() {
                             <Instagram style={{ fontSize: 50 }} />
                         </a>
                         <a href="https://web.whatsapp.com/" target='bash3'>
-                            <WhatsApp style={{ fontSize: 50 }} />
+                            <WhatsApp style={{ fontSize: 0 }} />
                         </a>
                     </section>
 
@@ -131,28 +131,28 @@ function Navbar() {
                 <section id="topnav">
 
                     <a href="/Home">
-                        Inicio <HomeIcon className="opaco" />
+                        Inicio <HomeIcon className="opaco" style={{ fontSize: 30 }}/>
                     </a>
 
                     <a href="/Catalogo">
-                        Catálogo <MenuBookIcon className="opaco" />
+                        Catálogo <MenuBookIcon className="opaco" style={{ fontSize: 30 }}/>
                     </a>
 
                     <a href="/Sobrenos">
-                        Sobre nós <PeopleAltIcon className="opaco" />
+                        Sobre nós <PeopleAltIcon className="opaco" style={{ fontSize: 30 }}/>
                     </a>
 
                     <a href="/Contato">
-                        Contato <CallIcon className="opaco" />
+                        Contato <CallIcon className="opaco" style={{ fontSize: 30 }}/>
                     </a>
                     <div>
                         <a href="/cart">
-                            <ShoppingCartIcon className="opaco" />
+                            <ShoppingCartIcon className="opaco" style={{ fontSize: 30 }}/>
                         </a>
                     </div>
                     <div>
                         <a href="/login">
-                            <AccountCircleIcon className="opaco" />
+                            <AccountCircleIcon className="opaco" style={{ fontSize: 30 }}/>
                         </a>
                     </div>
 
