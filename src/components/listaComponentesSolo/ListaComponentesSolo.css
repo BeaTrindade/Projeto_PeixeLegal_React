@@ -71,7 +71,7 @@ button:hover {
 
     .card1{
         width: 100% !important;
-        height: 100px;
+        height: 100px !important; 
         display: flex;
         flex-direction: row !important;
         margin-top: -80px !important;
@@ -115,6 +115,15 @@ button:hover {
 
     .card1{
         height: 150px;
+    }
+
+
+ }
+
+ @media only screen and (max-width: 300px) {
+
+    .card1{
+        height: 155px !important; 
     }
 
 
