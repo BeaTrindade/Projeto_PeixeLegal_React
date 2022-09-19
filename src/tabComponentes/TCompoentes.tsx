@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { AppBar, Tab, Tabs, Typography, Box } from '@material-ui/core';
 import { TabContext, TabPanel } from '@material-ui/lab';
-import ListaProdutosSolo from '../components/listaComponentesSolo/ListaComponentesSolo';
 import './TComponentes.css';
 
 function TComponentes() {
@@ -20,7 +19,6 @@ function TComponentes() {
         </AppBar>
         <TabPanel value="1" >
           <Box className='modelo' display="flex" flexWrap="wrap" justifyContent="center">
-            <ListaProdutosSolo />
           </Box>
         </TabPanel>
         <TabPanel value="2">
