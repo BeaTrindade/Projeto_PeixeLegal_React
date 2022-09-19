@@ -10,12 +10,9 @@ function Contato() {
     return (
         <>
         <Navbar/>
-            <section id='equipe'>
-                <h1>Equipe Peixe Legal</h1>
-            </section>
             <main id='contato'>
             <article>
-                    <img src="https://media.discordapp.net/attachments/1001812118422695987/1019296129491415090/profile-pic.png" alt="Ana Lu" />
+                    <img src="https://media.discordapp.net/attachments/1001946461010923520/1021411402277208115/profile-pic_2.png?width=406&height=406" alt="Ana Lu" />
                     <div>
                         <a href="https://www.linkedin.com/in/ana-civita/" target='bash'>
                             <LinkedInIcon className='icone' />
@@ -26,7 +23,6 @@ function Contato() {
                     </div>
                     <h3>Ana louise Civita</h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>30 anos;</h4>
                     <h4>Preferência por FRONT-END.</h4>
                 </article>
                 <article>
@@ -41,7 +37,6 @@ function Contato() {
                     </div>
                     <h3>Beatriz Gomes Trindade</h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>29 anos;</h4>
                     <h4>Preferência por FRONT-END.</h4>
                 </article>
                 <article>
@@ -56,7 +51,6 @@ function Contato() {
                     </div>
                     <h3>Bruno Peixoto</h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>27 anos;</h4>
                     <h4>Preferência por FRONT-END.</h4>
                 </article>
                 <article>
@@ -71,7 +65,6 @@ function Contato() {
                     </div>
                     <h3>Henrique de Andrade Rodrigues</h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>27 anos;</h4>
                     <h4>Preferência de Back-End.</h4>
                 </article>
                 <article>
@@ -86,7 +79,6 @@ function Contato() {
                     </div>
                     <h3>João Lucas Soares Almeida</h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>23 anos;</h4>
                     <h4>Preferência de Back-End.</h4>
                 </article>
                 <article>
@@ -101,7 +93,6 @@ function Contato() {
                     </div>
                     <h3>Juliana Gondim </h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>23 anos;</h4>
                     <h4>Preferência de Back-End.</h4>
                 </article>
                 <article>
@@ -116,7 +107,6 @@ function Contato() {
                     </div>
                     <h3>Matheus Carnizella</h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>23 anos;</h4>
                     <h4>Preferência de Back-End.</h4>
                 </article>    
                 <article>
@@ -131,7 +121,6 @@ function Contato() {
                     </div>
                     <h3>Mauricio Cucilho Junior</h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>30 anos;</h4>
                     <h4>Preferência de Back-End.</h4>
                 </article>             
             </main>
