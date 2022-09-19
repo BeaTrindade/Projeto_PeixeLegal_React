@@ -29,7 +29,7 @@ export default function CarouselManipulateState() {
             }
             setRadioState(imagesOpt[count].value);
             setCount(count + 1);
-        }, 7000);
+        }, 4000);
     }, [count]);
 
     return (
@@ -38,9 +38,7 @@ export default function CarouselManipulateState() {
                 <label htmlFor={radioState}>
                     {imagesOpt.map(({ value: text }: any) => {
                         return (
-                            <>
-                                <input type="radio" name="slide" value={text} checked={text === radioState} onChange={(e) => onRadioChange(e)} />
-                            </>
+                            ""
                         );
                     })}
                 </label>
