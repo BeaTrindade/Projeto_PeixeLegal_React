@@ -1,9 +1,6 @@
 import './ProdutoSelecionado.css';
 import { useState } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Grid } from '@material-ui/core';
-import { MdAddShoppingCart } from "react-icons/md";
-import { Carousel } from 'react-responsive-carousel';
 import Footer from '../../components/estaticos/footer/Footer';
 import Navbar from '../../components/estaticos/navbar/Navbar';
 
@@ -56,7 +53,7 @@ function ProdutoSelecionado() {
 
                             <div className="actions">
                                 <button className="buy">Comprar</button>
-                                <button className="cart"><MdAddShoppingCart /></button>
+                                <button className="cart"></button>
                             </div>
                             <h4 className="estoque">Estoque Disponível</h4>
                         </div>

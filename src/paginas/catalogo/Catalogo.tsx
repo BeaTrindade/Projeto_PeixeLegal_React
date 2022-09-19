@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Footer from '../../components/estaticos/footer/Footer';
 import Navbar from '../../components/estaticos/navbar/Navbar';
 import ListaProdutos from '../../components/listaComponentes/ListaComponentes';
@@ -8,12 +9,22 @@ import './Catalogo.css'
 
 function Produtos() {
 
+    const { categoria } = useParams<{categoria: string}>();
+
     const [categoriaState, setCategoriaState] = useState('TODOS');
 
     const onChangeCategory = (e: React.ChangeEvent<HTMLInputElement>) => {
         setCategoriaState(e.currentTarget.value)
         console.log(categoriaState)
     };
+
+    useEffect(() => {
+        if (categoria === undefined) {
+            setCategoriaState('TODOS')
+        } else {
+            setCategoriaState(categoria)
+        }
+    }, [categoria])
 
     return (
         <>
@@ -25,7 +36,7 @@ function Produtos() {
                         <h2 className='categoStyle'>Categoria</h2>
                         <div className='filtroStyle'>
                         <label>
-                            <input type="radio" name="categoria" value="TODOS" onChange={(e) => onChangeCategory(e)}  defaultChecked />
+                            <input type="radio" name="categoria" value="TODOS" onChange={(e) => onChangeCategory(e)}  />
                             Todos
                         </label>
                         </div>
