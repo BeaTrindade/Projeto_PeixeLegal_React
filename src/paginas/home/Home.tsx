@@ -17,26 +17,23 @@ function Home() {
             <CarouselManipulateState />
             {/* <button onClick={aaaa} /> */}
             <article id='homefoto' >
-                <a href='/temas'>
+                <a href='/catalogo'>
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165584342978740/caranguejo.png" />
                     <h3>Caraguejos</h3>
                 </a>
-                <a href='/temas'>
+                <a href='/catalogo'>
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165596472905728/camarao.png" />
                     <h3>Camarões</h3>
                 </a>
-                <a href='/temas'>
+                <a href='/catalogo'>
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165611475935273/doce.png" />
-                    <h3>Água Doce</h3>
+                    <h3>Água doce</h3>
                 </a>
-                <a href='/temas'>
+                <a href='/catalogo'>
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1017165634200682568/salgado.png" />
-                    <h3>Água Salgada</h3>
+                    <h3>Água salgada</h3>
                 </a>
             </article>
-            <Grid>
-                <TComponentes />
-            </Grid>
 
             <Footer />
 
