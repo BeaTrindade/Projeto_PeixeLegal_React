@@ -25,17 +25,17 @@ function Produtos() {
                         <h2>Categoria</h2>
                         <label>
                             <input type="radio" name="categoria" value="TODOS" onChange={(e) => onChangeCategory(e)}  defaultChecked />
-                            Todos Produtos
+                            Todos
                         </label>
 
                         <label>
                             <input type="radio" name="categoria" value="Água doce" onChange={(e) => onChangeCategory(e)}  />
-                            Água Doce
+                            Água doce
                         </label>
 
                         <label>
                             <input type="radio" name="categoria" value='Água salgada' onChange={(e) => onChangeCategory(e)}  />
-                            Água Salgada
+                            Água salgada
                         </label>
 
                         <label>
