@@ -22,32 +22,41 @@ function Produtos() {
 
                 <section>
                 
-                        <h2>Categoria</h2>
+                        <h2 className='categoStyle'>Categoria</h2>
+                        <div className='filtroStyle'>
                         <label>
                             <input type="radio" name="categoria" value="TODOS" onChange={(e) => onChangeCategory(e)}  defaultChecked />
                             Todos
                         </label>
+                        </div>
 
+                        <div className='filtroStyle'>
                         <label>
                             <input type="radio" name="categoria" value="Água doce" onChange={(e) => onChangeCategory(e)}  />
                             Água doce
                         </label>
+                        </div>
 
+                        <div className='filtroStyle'>
                         <label>
                             <input type="radio" name="categoria" value='Água salgada' onChange={(e) => onChangeCategory(e)}  />
                             Água salgada
                         </label>
+                        </div>
 
+                        <div className='filtroStyle'>
                         <label>
                             <input type="radio" name="categoria" value='Camarões' onChange={(e) => onChangeCategory(e)}  />
                             Camarões
                         </label>
+                        </div>
+
+                        <div className='filtroStyle'>
                         <label>
                             <input type="radio" name="categoria" value='Caranguejos' onChange={(e) => onChangeCategory(e)}  />
                             Caranguejos
                         </label>
-
-
+                        </div>
                 </section>
 
                 <section>
