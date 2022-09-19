@@ -21,6 +21,8 @@
 }
 
 #btn-comprar1{
+    align-items: center;
+    justify-content: center;
     margin: 5px;
     width: 100px;
     text-transform: uppercase;
@@ -48,23 +50,23 @@ button:hover {
     align-items: center;
  }
 
- @media only screen and (max-width: 985px) {
+ .mg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
 
-    #divisao{
-        width: 500px;
-        font-size: 10px;
-        margin-left: 50px;
-    }
+ .mg-top1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
 
-    #img-card1{
-        display: flex;
-        width:65px;
-        height: 65px;
-    }
-
-    #btn-comprar1{
-        font-size: 5px;
-    }
+ .mg-toph21
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
  
  @media only screen and (max-width: 600px) {
@@ -72,7 +74,6 @@ button:hover {
     .card1{
         width: 100% !important;
         height: 100px !important; 
-        display: flex;
         flex-direction: row !important;
         margin-top: -80px !important;
     }
@@ -88,44 +89,16 @@ button:hover {
         align-items: center;
         justify-content: center;
         font-size: 5px;
-        margin: 50px;
+        margin: 47px;
     }
 
     #btn-comprar1{
         font-size: 5px;
-        width: 50px;
-    }
-
-    .mg{
-        font-size: 10px;
-    }
-
-    .mg-top1{
-        font-size: 7px;
-        margin-bottom: 5px;
-    }
-
- }
-
- @media only screen and (max-width: 1000px) {
-
-    .card1{
-        flex-direction: row !important;
-    }
-
-    .card1{
-        height: 150px;
+        width: 40px;
     }
 
 
  }
 
- @media only screen and (max-width: 300px) {
 
-    .card1{
-        height: 155px !important; 
-    }
-
-
- }
 
