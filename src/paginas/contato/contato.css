@@ -39,7 +39,7 @@
 
 #contato article img:hover {
     opacity: 0.1;
-    rotate: 720deg;
+    rotate: 360deg;
     transform: scale(0.9, 0.9);
     z-index: -1 !important;
 }

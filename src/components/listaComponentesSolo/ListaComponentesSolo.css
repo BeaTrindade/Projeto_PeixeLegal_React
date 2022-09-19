@@ -5,7 +5,7 @@
 }
 
 .card1 {
-    border: 1px solid #45C1C6;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.685) !important;
     border-radius: 20px;
     width: 300px !important;
     background-color: rgb(236, 240, 245);
