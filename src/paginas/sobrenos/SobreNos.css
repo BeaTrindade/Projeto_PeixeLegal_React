@@ -1,35 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
 .peixinhoOo{
   background: url('https://media.discordapp.net/attachments/607999666839093248/1021486576057974864/peixeclaro.png?width=902&height=432');
 }
 
 .tituloN{
   color:#45C1C6 !important; 
-  font-weight: "bold" !important;
-  margin-right: 150px !important;
-}
-
-.textoN{
-  color:rgb(0, 0, 0) !important; 
-  font-weight: "bold" !important;
-  text-align: right !important;
+  font-weight: "bold" !important; 
+  margin-right: 150px;
+  font-size: 30px;
 }
 
 .titulo2N{
   color:#45C1C6 !important; 
-  font-weight: "bold" !important;
-  margin-left: 150px !important;
+  font-weight: "bold" !important; 
+  margin-left: 150px;
+  font-size: 30px;
 }
 
+.textoN{
+  color:rgb(0, 0, 0) !important;
+  font-weight: "bold" !important;
+  text-align: right !important;
+  font-size: 25px !important;
+}
 .texto2N{
-  color:black !important; 
+  color:black !important;
   font-weight: "bold" !important;
   text-align: left !important;
+  font-size: 25px !important;
 }
 
 .texto3N{
-  color:black !important; 
+  color:black !important;
   font-weight: "bold" !important;
   text-align: left !important;
+  font-size: 25px !important;
 }
 
 .imgE{
@@ -39,7 +48,7 @@
   Padding: 5px !important;
   margin-right: 5px !important;
   margin-left: 5px !important;
-  width: 100px;
+  width: 120px;
 }
 
 .imgD{
@@ -48,7 +57,7 @@
   float: left !important;
   Padding: 5px !important;
   margin-right: 20px !important;
-  width: 100px;
+  width: 120px;
 }
 
 /*---------Responsivo----------------*/

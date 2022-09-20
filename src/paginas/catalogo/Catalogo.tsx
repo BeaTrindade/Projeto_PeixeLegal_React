@@ -9,7 +9,7 @@ import './Catalogo.css'
 
 function Produtos() {
 
-    const { categoria } = useParams<{categoria: string}>();
+    const { categoria } = useParams<{ categoria: string }>();
 
     const [categoriaState, setCategoriaState] = useState('TODOS');
 
@@ -32,42 +32,46 @@ function Produtos() {
             <div id='page_catalogo'>
 
                 <section>
-                
+
+                    <div id='Hamburguer'>
                         <h2 className='categoStyle'>Categoria</h2>
                         <div className='filtroStyle'>
-                        <label>
-                            <input type="radio" name="categoria" value="TODOS" onChange={(e) => onChangeCategory(e)}  />
-                            Todos
-                        </label>
+                            <label>
+                                <input type="radio" name="categoria" value="TODOS" onChange={(e) => onChangeCategory(e)} />
+                                Todos
+                            </label>
                         </div>
 
                         <div className='filtroStyle'>
-                        <label>
-                            <input type="radio" name="categoria" value="Água doce" onChange={(e) => onChangeCategory(e)}  />
-                            Água doce
-                        </label>
+                            <label>
+                                <input type="radio" name="categoria" value="Água doce" onChange={(e) => onChangeCategory(e)} />
+                                Água doce
+                            </label>
                         </div>
 
                         <div className='filtroStyle'>
-                        <label>
-                            <input type="radio" name="categoria" value='Água salgada' onChange={(e) => onChangeCategory(e)}  />
-                            Água salgada
-                        </label>
+                            <label>
+
+                                <input type="radio" name="categoria" value='Água salgada' onChange={(e) => onChangeCategory(e)} />
+                                Água salgada
+                            </label>
                         </div>
 
                         <div className='filtroStyle'>
-                        <label>
-                            <input type="radio" name="categoria" value='Camarões' onChange={(e) => onChangeCategory(e)}  />
-                            Camarões
-                        </label>
+                            <label>
+                                <input type="radio" name="categoria" value='Camarões' onChange={(e) => onChangeCategory(e)} />
+                                Camarões
+                            </label>
                         </div>
 
                         <div className='filtroStyle'>
-                        <label>
-                            <input type="radio" name="categoria" value='Caranguejos' onChange={(e) => onChangeCategory(e)}  />
-                            Caranguejos
-                        </label>
+                            <label>
+                                <input type="radio" name="categoria" value='Caranguejos' onChange={(e) => onChangeCategory(e)} />
+                                Caranguejos
+                            </label>
                         </div>
+
+                    </div>
                 </section>
 
                 <section>
