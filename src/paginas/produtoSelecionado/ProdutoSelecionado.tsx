@@ -1,6 +1,5 @@
 import './ProdutoSelecionado.css';
 import { useState } from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Footer from '../../components/estaticos/footer/Footer';
 import Navbar from '../../components/estaticos/navbar/Navbar';
 

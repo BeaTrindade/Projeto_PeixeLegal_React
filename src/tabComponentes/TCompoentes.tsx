@@ -18,8 +18,7 @@ function TComponentes() {
           </Tabs>
         </AppBar>
         <TabPanel value="1" >
-          <Box className='modelo' display="flex" flexWrap="wrap" justifyContent="center">
-          </Box>
+
         </TabPanel>
         <TabPanel value="2">
           <Typography align="center"><img className='margem' src="https://media.discordapp.net/attachments/1001812118422695987/1019724932269228042/logo_PLegal.png?width=652&height=635" alt="logo" /></Typography>

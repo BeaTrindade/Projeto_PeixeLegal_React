@@ -7,6 +7,7 @@ import SobreNos from './paginas/sobrenos/SobreNos';
 import Login from './paginas/login/Login';
 import Contato from './paginas/contato/Contato';
 import Catalogo from '../src/paginas/catalogo/Catalogo';
+import ProdutoSelecionado from './paginas/produtoSelecionado/ProdutoSelecionado';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/catalogo/:categoria" element={<Catalogo />} />
           <Route path="/sobrenos" element={<SobreNos />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/produtoSelecionado" element={<ProdutoSelecionado />} />
         </Routes>
       </Router>
       </div>
