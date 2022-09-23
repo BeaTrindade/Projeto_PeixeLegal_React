@@ -18,6 +18,7 @@ color: #41c5c6;
 
 .card {
     border: 1px solid #41c5c6;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.685);
     border-radius: 8px;
     width: 300px;
     background-color: rgb(236, 240, 245);

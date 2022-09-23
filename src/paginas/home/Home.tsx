@@ -15,10 +15,10 @@ function Home() {
     return (
         
 
-        <main id='meiohome' >
+        <main id='meiohome' className='homeback'>
 
             <Navbar />
-            <div className='homeback'>
+            <div>
             <CarouselManipulateState />
             {/* <button onClick={aaaa} /> */}
 
@@ -57,7 +57,7 @@ function Home() {
                         <h5 className='mg-topHome'>Água doce</h5>
                         <h4 className='mg-topHome'>Quantidade: 1kg </h4>
                         <h2 className='mg-toph2Home'>R$ 83,00</h2>
-                        <a href='/sobrenos' className='btn-ajudarHome'>COMPRE DE UM PESCADOR ARTESANAL </a>                 
+                        <a href='/produtoselecionado/20' className='btn-ajudarHome'>COMPRE DE UM PESCADOR ARTESANAL </a>                 
                     </div>
 
                     <div className='cardHome'>
@@ -66,7 +66,7 @@ function Home() {
                         <h5 className='mg-topHome'>Água salgada</h5>
                         <h4 className='mg-topHome'>Quantidade: 1kg </h4>
                         <h2 className='mg-toph2Home'>R$ 105,00</h2>
-                        <a href='/sobrenos' className='btn-ajudarHome'>COMPRE DE UM PESCADOR ARTESANAL </a>                 
+                        <a href='/produtoselecionado/17' className='btn-ajudarHome'>COMPRE DE UM PESCADOR ARTESANAL </a>                 
                     </div>
 
                     <div className='cardHome'>
@@ -75,7 +75,7 @@ function Home() {
                         <h5 className='mg-topHome'>Camarão</h5>
                         <h4 className='mg-topHome'>Quantidade: 1kg </h4>
                         <h2 className='mg-toph2Home'>R$ 37,00</h2>
-                        <a href='/sobrenos' className='btn-ajudarHome'>COMPRE DE UM PESCADOR ARTESANAL </a>                 
+                        <a href='/produtoselecionado/11' className='btn-ajudarHome'>COMPRE DE UM PESCADOR ARTESANAL </a>                 
                     </div>
 
                     <div className='cardHome'>
@@ -84,7 +84,7 @@ function Home() {
                         <h5 className='mg-topHome'>Caranguejo</h5>
                         <h4 className='mg-topHome'>Quantidade: 1kg </h4>
                         <h2 className='mg-toph2Home'>R$ 43,00</h2>
-                        <a href='/sobrenos' className='btn-ajudarHome'>COMPRE DE UM PESCADOR ARTESANAL </a>                
+                        <a href='/produtoselecionado/12' className='btn-ajudarHome'>COMPRE DE UM PESCADOR ARTESANAL </a>                
                     </div>
 
                     <div className='cardHome'>
@@ -93,7 +93,7 @@ function Home() {
                         <h5 className='mg-topHome'>Água salgada</h5>
                         <h4 className='mg-topHome'>Quantidade: 1kg </h4>
                         <h2 className='mg-toph2Home'>R$ 128,00</h2>
-                        <a href='/sobrenos' className='btn-ajudarHome'>COMPRE DE UM PESCADOR ARTESANAL </a>                
+                        <a href='/produtoselecionado/19' className='btn-ajudarHome'>COMPRE DE UM PESCADOR ARTESANAL </a>                
                     </div>
 
                 </div>
@@ -101,6 +101,8 @@ function Home() {
 
                 </div>
             <Footer />
+
+
 
         </main >
     );

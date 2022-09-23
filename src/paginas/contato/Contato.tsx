@@ -8,9 +8,9 @@ import Navbar from '../../components/estaticos/navbar/Navbar';
 function Contato() {
 
     return (
-        <>
+        <main className='peixinhoO1'>
         <Navbar/>
-        <div className='peixinhoO'>
+        <div>
             <main id='contato'>
             <article>
                     <img src="https://media.discordapp.net/attachments/1001946461010923520/1021411402277208115/profile-pic_2.png?width=406&height=406" alt="Ana Lu" />
@@ -66,7 +66,7 @@ function Contato() {
                     </div>
                     <h3>Henrique de Andrade Rodrigues</h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>Preferência de Back-End.</h4>
+                    <h4>Preferência de BACK-END.</h4>
                 </article>
                 <article>
                     <img src="https://media.discordapp.net/attachments/1001812118422695987/1019306319234220113/profile-pic.png" alt="João" />
@@ -80,7 +80,7 @@ function Contato() {
                     </div>
                     <h3>João Lucas Soares Almeida</h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>Preferência de Back-End.</h4>
+                    <h4>Preferência de BACK-END.</h4>
                 </article>
                 <article>
                     <img src="https://media.discordapp.net/attachments/1001812118422695987/1017887987503218778/profile-pic_1.png" alt="Juliana" />
@@ -94,7 +94,7 @@ function Contato() {
                     </div>
                     <h3>Juliana Gondim </h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>Preferência de Back-End.</h4>
+                    <h4>Preferência de BACK-END.</h4>
                 </article>
                 <article>
                     <img src="https://media.discordapp.net/attachments/1001812118422695987/1017876515519733811/Matheus.png" alt="Matheus" />
@@ -108,7 +108,7 @@ function Contato() {
                     </div>
                     <h3>Matheus Carnizella</h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>Preferência de Back-End.</h4>
+                    <h4>Preferência de BACK-END.</h4>
                 </article>    
                 <article>
                     <img src="https://media.discordapp.net/attachments/1001812118422695987/1018949670816464996/profile-pic.png" alt="Maurucio" />
@@ -122,12 +122,12 @@ function Contato() {
                     </div>
                     <h3>Mauricio Cucilho Junior</h3>
                     <h4>Developer FullStack;</h4>
-                    <h4>Preferência de Back-End.</h4>
+                    <h4>Preferência de BACK-END.</h4>
                 </article>             
             </main>
             </div>
             <Footer/>
-        </>
+        </main>
     );
 }
 

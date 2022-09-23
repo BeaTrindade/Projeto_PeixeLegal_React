@@ -1,212 +1,177 @@
-#container{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+.peixinhoO{
+    background: url('https://media.discordapp.net/attachments/607999666839093248/1021486576057974864/peixeclaro.png?width=902&height=432');
+    position: absolute;
+    background-repeat: repeat-y;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+color: rgb(49, 49, 49);
+}
+
+h4{
+color: rgb(49, 49, 49);
+}
+
+h5{
+color: #41c5c6;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  margin-top: -50px;
+}
+
+.card1 {
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.685) !important;
+    border-radius: 8px;
+    width: 1100px;
+    height: 525px;
+    background-color: rgb(236, 240, 245);
+    
     display: flex;
-    flex: 1 1000px;
-    margin-left: 300px;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    margin: 10px;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+span{
+    font-size: 15px;
+ }
 
-.estilo {
-  font-size: 40px;
-}
-
-.estilo,
-.corpo {
-  margin: 0;
-  height: 100%;
-}
-
-.corpo {
-  height: 100vh !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
-}
-
-.carousel {
-  overflow: hidden;
-  border-radius: 0.5rem;
-  scroll-behavior: smooth;
-}
-
-.slides {
-  width: 35rem;
-  height: 25rem;
-  display: flex;
-  gap: 20px;
-  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.685) !important;
-  padding: 1rem;
-  overflow-x: scroll;
-
-  scroll-behavior: smooth;
-  --tw-scroll-snap-strictness: mandatory;
-  scroll-snap-type: x var(--tw-scroll-snap-strictness);
-}
-
-.navigation {
-  gap: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 10px;
-}
-
-.navigation a {
-  color: #45c1c6;
-  text-decoration: none;
-}
-
-.slide {
-  scroll-snap-stop: always;
-  scroll-snap-align: center;
-
-  flex-grow: 0;
-  flex-shrink: 0;
-
-  width: 30rem;
-  height: 18rem;
-
-  object-fit: cover;
-  background: #1e293b;
-
-  border: none;
-  border-radius: 0.5rem;
-}
-
-.slides::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 9999px;
-  background-color: #45c1c6;
-}
-
-.slides::-webkit-scrollbar {
-  height: 6px;
-}
-
-.slides::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 9999px;
-  background-color: #b0c0d7;
-}
-
-.slides::-webkit-scrollbar-thumb:hover {
-  background-color: #657791;
-}
-
-.slides::-webkit-scrollbar-thumb:active {
-  background-color: #38485e;
-}
-
-#Dados-do-Peixe{
+.separar{
+    padding: 75px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.mg-top0{
+    text-align: center;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+
+}
+
+ .mg-top1{
+    margin-top: -90px;  
+ 
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .mg-top15{
+    font-size: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .mg-top16{
+    color: rgb(49, 49, 49);
+    margin-bottom: 175px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+ }
+
+ .mg-toph21{
+    margin-bottom: 5px;
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ #img-card1{
+    border-radius: 8px;
+    width: 700px;
+    height: 475px;
+ }
+
+ #Dados-do-Peixe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #45c1c6;
-    flex: 1 400px;
-    width: 100%;
     padding: 10px;
     align-items: right;
-    width: 100%;
-    margin-bottom: 100px;
-    margin-top: 20px;
 }
 
 .selecionarQuantidade{
     display: flex;
-    justify-content: space-evenly;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: -150px;
 }
 
 .actions{
     display: flex;
-    justify-content: space-around;
-    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .minus{
-    width: 50px;
-    height: 50px;
+    margin-right: 25px;
+    width: 30px;
+    height: 30px;
     border: none;
     background-color: #45c1c6;
     transition: 500ms;
-    border-radius: 10px;
+    border-radius: 5px;
+    justify-content: center;
 }
 
 .minus:hover{
-    background-color: #346334;
+    background-color: #346364;
 }
 
 .plus{
-    width: 50px;
-    height: 50px;
+    margin-left: 25px;
+    width: 30px;
+    height: 30px;
     border: none;
     background-color: #45c1c6;
     transition: 500ms;
-    border-radius: 10px;
+    border-radius: 5px;
+    justify-content: center;
 }
 
 .plus:hover{
-    background-color: #346334;
-}
-
-.buy{
-    width: 75px;
-    height: 50px;
-    border: none;
-    background-color: #45c1c6;
-    transition: 500ms;
-    border-radius: 10px;
-}
-
-.buy:hover{
-    background-color: #346334;
+    background-color: #346364;
 }
 
 .cart{
-    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
     height: 50px;
     border: none;
     background-color: #45c1c6;
     transition: 500ms;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 45px;
 }
 
 .cart:hover{
-    background-color: #346334;
-}
-
-.preco{
-  font-size: 40px;
-}
-
-.card{
-  width: 500px;
-  height: 500px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.slide{
-  width: 560px;
-  height: 482px;
-
-}
-
-.slides{
-  width: 600px;
-  height: 520px;
-}
-
-.homeback {
-  background: url('https://media.discordapp.net/attachments/607999666839093248/1021486576057974864/peixeclaro.png?width=902&height=432');
+    background-color: #346364;
 }

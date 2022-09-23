@@ -84,7 +84,7 @@ function Navbar() {
                     </div>
                     <div>
                         <a href="/Home" onClick={sair}>
-                            <LogoutIcon className="opaco" />
+                            <LogoutIcon className="opaco" style={{ fontSize: 30 }}/>
                         </a>
                     </div>
 

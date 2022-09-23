@@ -1,5 +1,5 @@
 interface Estoque {
-    id_Produtos: number,
+    id_Produto: number,
     produto?: string,
     descricao?: string
     categoria?: string,

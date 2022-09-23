@@ -1,28 +1,13 @@
-.categoStyle{
-    display: flex;
-    justify-content: center;
-
-    margin: 0.3rem;
-    width: 100%;   
-    border: 0;
-    border-radius: 8px;
-    padding: 0.3rem;
-    background: #ffffff;
-    color: #45C1C6;   
-}
-
 .filtroStyle{ 
         margin: 0.3rem;
-        width: 100%;   
+        width: 40%;   
         border: 0;
         border-radius: 8px;
         padding: 0.3rem;
-
+        cursor: pointer;
         background: #ffffff;
         color: #45C1C6;       
         display: flex;
-        text-align: center;
-        justify-content: center;
         text-transform: uppercase;
 
         transition: all .2s ease-out;
@@ -33,19 +18,24 @@
     font-weight: bold;
 }
 
-.filtroStyle input{
-    height: 0;
-    width: 0;
-}
+.categoStyle{
+    display: flex;
+    justify-content: center;
 
-/* ----------------------- */
+    margin: 0.3rem;
+    width: 40%;   
+    border: 0;
+    border-radius: 8px;
+    padding: 0.3rem;
+    background: #ffffff;
+    color: #45C1C6;   
+}
 
 #page_catalogo {
     display: flex;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 60px;
-    padding-bottom: 80px;
+    width: 100%;
+    padding: 20px;
+    background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(69,193,198,1) 0%, rgba(242,251,251,1) 100%, rgba(69,193,198,1) 100%, rgba(0,212,255,1) 100%);
 
 }
@@ -55,21 +45,30 @@
 }
 
 #page_catalogo > section:nth-child(1) {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(69,193,198,1) 0%, rgba(242,251,251,1) 100%, rgba(69,193,198,1) 100%, rgba(0,212,255,1) 100%);
+
+    width: 100%;
+
+    flex: 1 200px;
     display:flex;
     flex-direction: column;
-    padding-left: 10px;
-    padding-right: 100px;
-    margin-bottom: 50px;
+    padding: 10px;
+    padding-left: 70px;
 
 }
 
 #page_catalogo > section:nth-child(2) {
+    background: rgb(255,255,255);
     background: url('https://media.discordapp.net/attachments/607999666839093248/1021486576057974864/peixeclaro.png?width=902&height=432');
-
-    width: 100%;  
+    width: 100%;
+    flex: 1 1000px;
+    padding: 10px; 
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
 }
 
 #page_catalogo label{
@@ -78,7 +77,7 @@ padding: 0%;
 
 /*---------Responsivo----------------*/
 
-@media (max-width: 0px) {
+@media (max-width: 600px) {
 }
 
   /*-------------------------*/

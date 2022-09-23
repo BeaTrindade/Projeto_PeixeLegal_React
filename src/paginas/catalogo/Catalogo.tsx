@@ -32,11 +32,11 @@ function Produtos() {
             <div id='page_catalogo'>
 
                 <section>
-                
+
+                    <div id='Hamburguer'>
                         <h2 className='categoStyle'>Categoria</h2>
-                        
                         <div className='filtroStyle'>
-                        <label>
+                            <label>
                                 <input type="radio" name="categoria" value="TODOS" onChange={(e) => onChangeCategory(e)} />
                                 Todos
                             </label>
@@ -70,6 +70,8 @@ function Produtos() {
                                 Caranguejos
                             </label>
                         </div>
+
+                    </div>
                 </section>
 
                 <section>
