@@ -7,8 +7,11 @@ import Estoque from '../../models/Estoque';
 import useLocalStorage from 'react-use-localstorage';
 import { useParams, useNavigate } from 'react-router-dom';
 import { buscaId } from '../../services/Services';
+import { toast } from 'react-toastify';
 
 function ProdutoSelecionado() {
+
+    const carrinho = () => toast.success('Produto adicionado ao carrinho');
 
     const [quantity, setQuantity] = useState(1);
 
@@ -71,7 +74,7 @@ function ProdutoSelecionado() {
 
                         <div id='Dados-do-Peixe' className='detalhe'>
                     <div className="actions">
-                        <button className="cart"><MdAddShoppingCart /></button>
+                        <button onClick={carrinho} className="cart"><MdAddShoppingCart /></button>
                     </div>
                 </div>
                     </div>

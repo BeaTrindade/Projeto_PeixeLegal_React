@@ -45,12 +45,13 @@ color: #41c5c6;
     color: #fff;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 
     transition: all .2s ease-out;
 }
 
-button:hover {
-    transform: scale(1.1);
+#btn-comprar:hover {
+    transform: scale(1.2,1.2);
     font-weight: bold;
 }
 

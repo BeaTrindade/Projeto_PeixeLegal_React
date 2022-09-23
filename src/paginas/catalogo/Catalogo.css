@@ -1,13 +1,28 @@
+.categoStyle{
+    display: flex;
+    justify-content: center;
+
+    margin: 0.3rem;
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    padding: 0.3rem;
+    background: #ffffff;
+    color: #45C1C6;
+}
+
 .filtroStyle{ 
         margin: 0.3rem;
-        width: 40%;   
+        width: 100%;
         border: 0;
         border-radius: 8px;
         padding: 0.3rem;
-        cursor: pointer;
+
         background: #ffffff;
-        color: #45C1C6;       
+        color: #45C1C6;
         display: flex;
+        text-align: center;
+        justify-content: center;
         text-transform: uppercase;
 
         transition: all .2s ease-out;
@@ -18,24 +33,17 @@
     font-weight: bold;
 }
 
-.categoStyle{
-    display: flex;
-    justify-content: center;
-
-    margin: 0.3rem;
-    width: 40%;   
-    border: 0;
-    border-radius: 8px;
-    padding: 0.3rem;
-    background: #ffffff;
-    color: #45C1C6;   
+.filtroStyle input{
+    height: 0;
+    width: 0;
 }
 
 #page_catalogo {
     display: flex;
-    width: 100%;
-    padding: 20px;
-    background: rgb(255,255,255);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 80px;
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(69,193,198,1) 0%, rgba(242,251,251,1) 100%, rgba(69,193,198,1) 100%, rgba(0,212,255,1) 100%);
 
 }
@@ -45,16 +53,11 @@
 }
 
 #page_catalogo > section:nth-child(1) {
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(69,193,198,1) 0%, rgba(242,251,251,1) 100%, rgba(69,193,198,1) 100%, rgba(0,212,255,1) 100%);
-
-    width: 100%;
-
-    flex: 1 200px;
     display:flex;
     flex-direction: column;
-    padding: 10px;
-    padding-left: 70px;
+    padding-left: 10px;
+    padding-right: 100px;
+    margin-bottom: 50px;
 
 }
 
@@ -62,13 +65,9 @@
     background: rgb(255,255,255);
     background: url('https://media.discordapp.net/attachments/607999666839093248/1021486576057974864/peixeclaro.png?width=902&height=432');
     width: 100%;
-    flex: 1 1000px;
-    padding: 10px; 
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 50px;
 }
 
 #page_catalogo label{
