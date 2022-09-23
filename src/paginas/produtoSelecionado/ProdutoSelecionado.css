@@ -138,6 +138,7 @@ span{
     transition: 500ms;
     border-radius: 5px;
     justify-content: center;
+    cursor: pointer;
 }
 
 .minus:hover{
@@ -153,6 +154,7 @@ span{
     transition: 500ms;
     border-radius: 5px;
     justify-content: center;
+    cursor: pointer;
 }
 
 .plus:hover{
@@ -170,8 +172,10 @@ span{
     transition: 500ms;
     border-radius: 10px;
     font-size: 45px;
+    cursor: pointer;
 }
 
 .cart:hover{
     background-color: #346364;
+    transform: scale(1.2,1.2);
 }

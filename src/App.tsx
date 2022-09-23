@@ -24,13 +24,10 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/catalogo" element={<Catalogo />} />
+          <Route path="/catalogo/:categoria" element={<Catalogo />} />
           <Route path="/sobrenos" element={<SobreNos />} />
           <Route path="/contato" element={<Contato />} />
-
-
           <Route path="/produtoselecionado" element={<ProdutoSelecionado />} />
-
-
           <Route path="/produtoselecionado/:id_Produtos" element={<ProdutoSelecionado />}/>
         </Routes>
       </Router>
