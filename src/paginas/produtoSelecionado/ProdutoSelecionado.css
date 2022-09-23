@@ -2,8 +2,8 @@
 
 .peixinhoO{
     background: url('https://media.discordapp.net/attachments/607999666839093248/1021486576057974864/peixeclaro.png?width=902&height=432');
-    position: absolute;
-    background-repeat: repeat-y;
+    position: flex;
+    background-repeat: repeat !important;
 }
 
 *{
