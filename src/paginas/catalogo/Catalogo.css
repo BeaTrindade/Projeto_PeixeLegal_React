@@ -3,23 +3,23 @@
     justify-content: center;
 
     margin: 0.3rem;
-    width: 100%;   
+    width: 100%;
     border: 0;
     border-radius: 8px;
     padding: 0.3rem;
     background: #ffffff;
-    color: #45C1C6;   
+    color: #45C1C6;
 }
 
 .filtroStyle{ 
         margin: 0.3rem;
-        width: 100%;   
+        width: 100%;
         border: 0;
         border-radius: 8px;
         padding: 0.3rem;
 
         background: #ffffff;
-        color: #45C1C6;       
+        color: #45C1C6;
         display: flex;
         text-align: center;
         justify-content: center;
@@ -37,8 +37,6 @@
     height: 0;
     width: 0;
 }
-
-/* ----------------------- */
 
 #page_catalogo {
     display: flex;
@@ -64,12 +62,12 @@
 }
 
 #page_catalogo > section:nth-child(2) {
+    background: rgb(255,255,255);
     background: url('https://media.discordapp.net/attachments/607999666839093248/1021486576057974864/peixeclaro.png?width=902&height=432');
-
-    width: 100%;  
+    width: 100%;
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 #page_catalogo label{
@@ -78,7 +76,7 @@ padding: 0%;
 
 /*---------Responsivo----------------*/
 
-@media (max-width: 0px) {
+@media (max-width: 600px) {
 }
 
   /*-------------------------*/
