@@ -1,4 +1,3 @@
-import { CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core';
 import './contato.css'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';

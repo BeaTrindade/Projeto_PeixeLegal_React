@@ -3,7 +3,7 @@ interface Estoque {
     produto?: string,
     descricao?: string
     categoria?: string,
-    valor?: string,
+    valor: string,
     quantidade?: string,
     url_Imagem?: string
 }

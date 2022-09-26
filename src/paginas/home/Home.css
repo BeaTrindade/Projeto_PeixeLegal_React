@@ -14,7 +14,6 @@
   align-items: center;
   margin-top: 50px;
   margin-bottom: 100px;
-
 }
 
 .cardHome {
@@ -55,14 +54,11 @@
   font-weight: bold;
 }
 
-
 #img-cardHome{
   border-radius: 8px;
   width: 100%;
   height: 250px;
 }
-
-/* ------HOME--------- */
 
 #meiohome {
   width: 100%;

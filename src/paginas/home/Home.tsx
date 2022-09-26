@@ -2,27 +2,16 @@ import React from 'react';
 import CarouselManipulateState from "../../components/estaticos/carousel/Carouselmani";
 import Footer from '../../components/estaticos/footer/Footer';
 import Navbar from '../../components/estaticos/navbar/Navbar';
-import CarouselCard from '../../components/carouselcard/CarouselCard';
 import { toast } from "react-toastify";
 import "./Home.css"
-import { Grid } from '@mui/material';
-import TComponentes from '../../tabComponentes/TCompoentes';
 import { Link } from 'react-router-dom';
 
 function Home() {
-    const aaaa = () => toast.success('Notícia deletada com sucesso');
-
     return (
-
-
         <main id='meiohome' className='homeback'>
-
             <Navbar />
             <div>
                 <CarouselManipulateState />
-                {/* <button onClick={aaaa} /> */}
-
-
                 <article id='homefoto' >
                     <a >
                         <Link to={`/Catalogo/Caranguejos`}>
@@ -85,15 +74,9 @@ function Home() {
                         <h5 className='mg-topHome'>Água salgada</h5>
                         <a href='/sobrenos' className='btn-ajudarHome'>COMPRE DE UM PESCADOR ARTESANAL </a>
                     </div>
-
                 </div>
-
-
             </div>
             <Footer />
-
-
-
         </main >
     );
 }

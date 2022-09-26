@@ -1,0 +1,121 @@
+.carrinhocorpo {
+   background-color: #45c1c6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.carrinhocard {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 130px;
+    background: url('https://media.discordapp.net/attachments/607999666839093248/1021486576057974864/peixeclaro.png?width=902&height=432');
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.img-carrinho {
+    display: flex;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.carrinhofaixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #45c1c6;
+    font-size: 50px;
+}
+
+.carrinhofim {
+    background-color: pink;
+    height: 100px;
+
+
+}
+
+.carrinhoinfocard {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 130px;
+    
+}
+
+.carrinhoinfocard div:first-child{
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carrinhoinfocard div:last-child{
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+.carrinhobuttom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50px;
+    height: 130px;
+}
+
+.imglixo {
+    width: 50px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(244, 239, 239, 0.5);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px ;
+    transition: 500ms;
+    border: none;
+}
+
+.imglixo:hover{
+    background-color: rgb(235, 75, 75);
+}
+
+.menos {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #45c1c6;
+    transition: 500ms;
+    border-radius: 100%;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.menos:hover {
+    background-color: #346364;
+}
+
+.mais {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #45c1c6;
+    transition: 500ms;
+    border-radius: 100%;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.mais:hover {
+    background-color: #346364;
+}
+
+@media only screen and (max-width: 610px) {
+    .carrinhocard{ width: 95%;}
+        .img-carrinho{width: 100px;}
+}

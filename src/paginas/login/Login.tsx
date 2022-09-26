@@ -14,7 +14,6 @@ function Login() {
     let navigate = useNavigate();
     
     const [token, setToken] = useLocalStorage('token');
-
     const [UserLogin, setUser] = useState<Autenticar>(
         {
             email: '',
@@ -56,32 +55,22 @@ function Login() {
                     </Box>                    
                     <label>Entrar</label>
                 </article>
-
                 <form onSubmit={onSubmit}>
-
                     <TextField value={UserLogin.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' fullWidth />
                     <TextField value={UserLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
 
                     <Button className='corzinhaa' type='submit' variant='contained' style={{ fontWeight: 'bold' }}>
                         Logar
                     </Button>
-
                 </form>
-
                 <article className='footer'>
                     <Typography variant='subtitle1'>
                         Ainda não tem cadastro?
                     </Typography>
                     <Button className='loq' href='/Cadastro' variant="text" style={{ fontWeight: 'bold' }}>Cadastre-se já</Button>
-
                 </article>
             </section>
-
         </main>
-
     );
-
-
 }
-
 export default Login;
