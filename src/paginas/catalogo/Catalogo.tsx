@@ -10,14 +10,11 @@ import './Catalogo.css'
 function Produtos() {
 
     const { categoria } = useParams<{ categoria: string }>();
-
     const [categoriaState, setCategoriaState] = useState('TODOS');
-
     const onChangeCategory = (e: React.ChangeEvent<HTMLInputElement>) => {
         setCategoriaState(e.currentTarget.value)
         console.log(categoriaState)
     };
-
     useEffect(() => {
         if (categoria === undefined) {
             setCategoriaState('TODOS')
@@ -25,7 +22,6 @@ function Produtos() {
             setCategoriaState(categoria)
         }
     }, [categoria])
-
     return (
         <>
             <Navbar />

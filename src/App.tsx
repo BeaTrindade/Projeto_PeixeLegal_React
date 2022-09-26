@@ -10,6 +10,7 @@ import Catalogo from '../src/paginas/catalogo/Catalogo';
 import ProdutoSelecionado from './paginas/produtoSelecionado/ProdutoSelecionado';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Carrinho from './paginas/carrinho/Carrinho';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/contato" element={<Contato />} />
           <Route path="/produtoselecionado" element={<ProdutoSelecionado />} />
           <Route path="/produtoselecionado/:id_Produtos" element={<ProdutoSelecionado />}/>
+          <Route path="/carrinho" element={<Carrinho />} />
         </Routes>
       </Router>
       </div>

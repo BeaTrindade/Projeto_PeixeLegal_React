@@ -51,7 +51,7 @@ function Navbar() {
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1019613912817221682/nomelogo.png" alt="Logo" />
 
                     <section>
-                        <a href="/cart">
+                        <a href="/carrinho">
                             <ShoppingCartIcon style={{ fontSize: 50 }} />
                         </a>
                         <a href="/Home" onClick={sair}>

@@ -37,7 +37,7 @@ function Footer() {
                                 <li><a href="/Contato">Quem somos</a></li>
                                 <li><a href="/Catalogo">Nossos serviços</a></li>
                                 <li><a href="/SobreNos">Política de privacidade</a></li>
-                                <li><a href="/Catalogo">Status De Pedido</a></li>
+                                <li><a href="/carrinho">Status De Pedido</a></li>
                             </ul>
                         </div>
                         <div className="footer-col">
