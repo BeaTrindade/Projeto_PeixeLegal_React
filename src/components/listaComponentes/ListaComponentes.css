@@ -32,8 +32,8 @@ color: #41c5c6;
     margin: 10px;
 }
 
-#btn-comprar{
-    margin: 1rem 0;
+#btn-visualizar{
+    margin: 0.1rem;
     display: flex;
     width: 50%;
     text-transform: uppercase;
@@ -44,7 +44,28 @@ color: #41c5c6;
     background: #41c5c6;
     color: #fff;
     justify-content: center;
-    align-items: center;
+    text-decoration: none;
+
+    transition: all .2s ease-out;
+}
+
+#btn-visualizar:hover {
+    transform: scale(1.2,1.2);
+    font-weight: bold;
+}
+
+#btn-comprar{
+    margin: 0.3rem;
+    display: flex;
+    width: 30%;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 8px;
+    padding: .3rem;
+    cursor: pointer;
+    background: #41c5c6;
+    color: #fff;
+    justify-content: center;
     text-decoration: none;
 
     transition: all .2s ease-out;
@@ -53,7 +74,10 @@ color: #41c5c6;
 #btn-comprar:hover {
     transform: scale(1.2,1.2);
     font-weight: bold;
+    background: #81f140;
 }
+
+
 
 span{
     font-size: 15px;
