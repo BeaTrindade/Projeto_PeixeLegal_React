@@ -2,6 +2,7 @@ import './ProdutoSelecionado.css';
 import React, { useEffect, useState } from 'react'
 import Footer from '../../components/estaticos/footer/Footer';
 import Navbar from '../../components/estaticos/navbar/Navbar';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Estoque from '../../models/Estoque';
 import useLocalStorage from 'react-use-localstorage';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -85,7 +86,7 @@ function ProdutoSelecionado() {
     return (
         <>
             <Navbar />
-            <div id='container' className='peixinhoO'>
+            <div id='container' className='peixinhoOoO'>
                 <article className='card1'>
                     <img src={produtos?.url_Imagem} alt={produtos?.produto} id='img-card1' />
                     <div className='separar'>
@@ -98,8 +99,10 @@ function ProdutoSelecionado() {
                         <h2 className='mg-toph21'>R$: {produtos?.valor}</h2>
 
                         <div id='Dados-do-Peixe' className='detalhe'>
-                            <div className="actions">
-                                <button onClick={addToCart} className="cart"></button>
+                            <div className="actions">                           
+                        
+                                <button onClick={addToCart} className="comprarSelect">
+                                    <a><ShoppingCartIcon/></a></button>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-.peixinhoO{
+.peixinhoOoO{
     background: url('https://media.discordapp.net/attachments/607999666839093248/1021486576057974864/peixeclaro.png?width=902&height=432');
     position: flex;
     background-repeat: repeat !important;
@@ -161,21 +161,25 @@ span{
     background-color: #346364;
 }
 
-.cart{
+.comprarSelect{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100px;
     height: 50px;
     border: none;
-    background-color: #45c1c6;
+    background-color: #45C1C6;
     transition: 500ms;
     border-radius: 10px;
     font-size: 45px;
     cursor: pointer;
 }
 
-.cart:hover{
+.comprarSelect:hover{
     background-color: #346364;
     transform: scale(1.2,1.2);
 }
+
+.comprarSelect a {
+    color: rgb(255, 255, 255);
+  }
