@@ -1,5 +1,6 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import useLocalStorage from 'react-use-localstorage';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Estoque from '../../models/Estoque';
 import { busca, buscaId } from '../../services/Services';
 import { toast } from "react-toastify";
@@ -22,6 +23,7 @@ function ListaProdutos(props: any) {
         })
     }
 
+
     useEffect(() => {
 
         getProdutos()
@@ -38,7 +40,9 @@ function ListaProdutos(props: any) {
                         <h5 className='mg-top'>{produto.categoria}</h5>
                         <h4 className='mg-top'>Quantidade: {produto.quantidade} </h4>
                         <h2 className='mg-toph2'>R$: {produto.valor}</h2>
-                        <a href={`/produtoselecionado/${produto.id_Produto}`} id='btn-comprar'>Visualizar</a>
+                        <a href={`/produtoselecionado/${produto.id_Produto}`} id='btn-visualizar'>Visualizar</a>
+                        <button onClick={Addcarrinho} id='btn-comprar'><ShoppingCartIcon/></button>
+
                     </article>
 
                 ))}
@@ -60,6 +64,7 @@ function ListaProdutos(props: any) {
                                 <h4 className='mg-top'>Quantidade: {produto.quantidade} </h4>
                                 <h2 className='mg-toph2'>R$: {produto.valor}</h2>
                                 <a href={`/produtoselecionado/${produto.id_Produto}`} id='btn-comprar'>Visualizar</a>
+                                <button onClick={Addcarrinho} id='btn-comprar'><ShoppingCartIcon/></button>
                             </article>
                             :
                             ''
