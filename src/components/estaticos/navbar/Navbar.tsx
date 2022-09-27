@@ -51,7 +51,8 @@ function Navbar() {
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1019613912817221682/nomelogo.png" alt="Logo" />
 
                     <section>
-                        <a href="/carrinho">
+                    <input type="checkbox"  className="carrinhobotao" />
+                        <a >
                             <ShoppingCartIcon style={{ fontSize: 50 }} />
                         </a>
                         <a href="/Home" onClick={sair}>
@@ -78,7 +79,8 @@ function Navbar() {
                         Contato <CallIcon className="opaco" style={{ fontSize: 30 }}/>
                     </a>
                     <div>
-                        <a href="/cart">
+                       
+                        <a href="/cart" >
                             <ShoppingCartIcon className="opaco" style={{ fontSize: 30 }}/>
                         </a>
                     </div>
@@ -119,7 +121,8 @@ function Navbar() {
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1019613912817221682/nomelogo.png" alt="Logo" />
 
                     <section>
-                        <a href="/cart">
+                    <input type="checkbox" className="carrinhobotao"/>
+                        <a>
                             <ShoppingCartIcon style={{ fontSize: 50 }} />
                         </a>
                         <a href="/login">

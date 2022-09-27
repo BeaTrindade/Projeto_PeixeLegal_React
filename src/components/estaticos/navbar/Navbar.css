@@ -131,10 +131,23 @@
   opacity: 0.5;
 }
 
+.carrinhobotao{
+ position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: 0.0;
+  right: 105px;
+  cursor: pointer;
+
+}
+
 @media only screen and (max-width: 600px) {
   #icon {
     justify-content: center;
     align-items: center;
+  }
+  .carrinhobotao{
+    display: none;
   }
 
   #icon img{
