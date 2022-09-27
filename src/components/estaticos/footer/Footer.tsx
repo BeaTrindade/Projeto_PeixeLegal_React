@@ -44,10 +44,10 @@ function Footer() {
                             <div className="midias-socias">
                                 <h3>Redes Sociais</h3>
                                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-                                <a href="https://www.facebook.com/"> <i className="fa fa-facebook"></i> </a>
-                                <a href="https://www.instagram.com/"> <i className="fa fa-instagram"></i> </a>
-                                <a href="https://web.whatsapp.com/"> <i className="fa fa-whatsapp"></i> </a>
-                                <a href="https://www.google.com/intl/pt_br/gmail/about/"> <i className="fa fa-envelope"></i></a>
+                                <a href="https://linktr.ee/peixelegal" target='bash'> <i className="fa fa-facebook"></i> </a>
+                                <a href="https://linktr.ee/peixelegal" target='bash1'> <i className="fa fa-instagram"></i> </a>
+                                <a href="https://linktr.ee/peixelegal" target='bash2'> <i className="fa fa-whatsapp"></i> </a>
+                                <a href="https://linktr.ee/peixelegal" target='bash3'> <i className="fa fa-envelope"></i></a>
                             </div>
                             <h3>Formas de Pagamento</h3>
                             <div>                                

@@ -37,13 +37,13 @@ function Navbar() {
                 
                 <section id="icon">
                     <section>
-                        <a href="https://www.facebook.com/" target='bash'>
+                        <a href="https://linktr.ee/peixelegal" target='bash'>
                             <Facebook style={{ fontSize: 50 }} />
                         </a>
-                        <a href="https://www.instagram.com/" target='bash2'>
+                        <a href="https://linktr.ee/peixelegal" target='bash2'>
                             <Instagram style={{ fontSize: 50 }} />
                         </a>
-                        <a href="https://web.whatsapp.com/" target='bash3'>
+                        <a href="https://linktr.ee/peixelegal" target='bash3'>
                             <WhatsApp style={{ fontSize: 50 }} />
                         </a>
                     </section>
@@ -105,13 +105,13 @@ function Navbar() {
                 </div>
                 <section id="icon">
                     <section>
-                        <a href="https://www.facebook.com/" target='bash'>
+                        <a href="https://linktr.ee/peixelegal" target='bash'>
                             <Facebook style={{ fontSize: 50 }} />
                         </a>
-                        <a href="https://www.instagram.com/" target='bash2'>
+                        <a href="https://linktr.ee/peixelegal" target='bash2'>
                             <Instagram style={{ fontSize: 50 }} />
                         </a>
-                        <a href="https://web.whatsapp.com/" target='bash3'>
+                        <a href="https://linktr.ee/peixelegal" target='bash3'>
                             <WhatsApp style={{ fontSize: 0 }} />
                         </a>
                     </section>
