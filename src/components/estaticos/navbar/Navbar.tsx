@@ -60,7 +60,10 @@ function Navbar() {
                             <Carrinho width='400px' />
                         </div>
 
-                        <ShoppingCartIcon style={{ fontSize: 50 }} />
+                        <a>
+                            <ShoppingCartIcon style={{ fontSize: 50 }} />
+                        </a>
+
                         <a href="/Home" onClick={sair}>
                             <LogoutIcon style={{ fontSize: 50 }} />
                         </a>
@@ -86,7 +89,7 @@ function Navbar() {
                     </a>
                     <div>
 
-                        <a href="/cart" >
+                        <a href="/carrinho" >
                             <ShoppingCartIcon className="opaco" style={{ fontSize: 30 }} />
                         </a>
                     </div>
@@ -120,14 +123,13 @@ function Navbar() {
                             <Instagram style={{ fontSize: 50 }} />
                         </a>
                         <a href="https://linktr.ee/peixelegal" target='bash3'>
-                            <WhatsApp style={{ fontSize: 0 }} />
+                            <WhatsApp style={{ fontSize: 50 }} />
                         </a>
                     </section>
 
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1019613912817221682/nomelogo.png" alt="Logo" />
 
                     <section>
-                        <input type="checkbox" className="carrinhobotao" />
                         <a>
                             <ShoppingCartIcon style={{ fontSize: 50 }} />
                         </a>
@@ -155,7 +157,7 @@ function Navbar() {
                         Contato <CallIcon className="opaco" style={{ fontSize: 30 }} />
                     </a>
                     <div>
-                        <a href="/cart">
+                        <a href="/home">
                             <ShoppingCartIcon className="opaco" style={{ fontSize: 30 }} />
                         </a>
                     </div>

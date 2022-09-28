@@ -112,9 +112,8 @@ function ProdutoSelecionado() {
 
                         <div id='Dados-do-Peixe' className='detalhe'>
                             <div className="actions">
-
                                 <button onClick={addToCart} className="comprarSelect">
-
+                                    <a><ShoppingCartIcon style={{ fontSize: 40 }}/></a>
                                 </button>
                             </div>
                         </div>
