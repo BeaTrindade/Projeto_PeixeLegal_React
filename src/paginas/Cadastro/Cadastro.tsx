@@ -32,6 +32,16 @@ function Cadastros() {
             portadores: ''
         }
     );
+
+    const loginon = () => {
+
+        toast.success('Você agora tem uma conta no Peixe Legal!');
+    }
+    const algonaoestacerto = () => {
+
+        toast.success("Dados inconsistentes. Favor verificar as informações de cadastro.");
+    }
+
     useEffect(() => {
         if (userResult.id_usuario != 1) {
             navigate('/login');
@@ -50,10 +60,10 @@ function Cadastros() {
         e.preventDefault();
         if (confirmesenha === UserLogin.senha) {
             registrar(`/api/Usuarios`, UserLogin, setUserResult)
-            alert('Você agora tem uma conta no Peixe Legal!')
+            toast.success('Você agora tem uma conta no Peixe Legal!');
 
         } else {
-            alert("Dados inconsistentes. Favor verificar as informações de cadastro.")
+            toast.success("Dados inconsistentes. Favor verificar as informações de cadastro.");
         }
     }
     return (

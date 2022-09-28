@@ -23,18 +23,18 @@
   overflow: hidden;
 }
 
-#topnav div a{
+#topnav div a {
   display: none;
   opacity: 0%;
   transition: 0ms;
   transition: 500ms;
 }
 
-#topnav div a:hover{
+#topnav div a:hover {
   background-color: transparent;
 }
 
-.opaco{
+.opaco {
   display: flex;
   padding: 0px 5px 0px 5px;
 }
@@ -56,12 +56,40 @@
 
 }
 
-#icon section{
+#icon section {
   display: flex;
   align-items: center;
   justify-content: start;
   padding: 0px 15px 0px 15px;
 }
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 65vh;
+  transform: translateX(-10%);
+  transition: transform 100ms ease-in-out, opacity 200ms;
+  list-style: none;
+  right: 20px;
+  top: 150px;
+  border-radius: 15px;
+  background-color:  rgb(236, 240, 245);
+  padding: 15px;
+  overflow: scroll;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.685) !important;
+
+}
+
+
 
 #icon a {
   display: flex;
@@ -70,8 +98,8 @@
   margin: 5px;
 }
 
-#icon img{
- width: 30%;
+#icon img {
+  width: 30%;
 
 }
 
@@ -93,13 +121,14 @@
   transition: 600ms;
 }
 
-#icon div a:hover{
+#icon div a:hover {
   color: white;
   background-color: black;
 }
 
 .waves1 {
-  height: 65px; /* change the height of the waves here */
+  height: 65px;
+  /* change the height of the waves here */
   width: 100%;
   top: 100px;
   position: absolute;
@@ -131,14 +160,21 @@
   opacity: 0.5;
 }
 
-.carrinhobotao{
- position: absolute;
+.carrinhobotao {
+  position: absolute;
   width: 50px;
   height: 50px;
-  opacity: 0.0;
+  opacity: 0;
   right: 105px;
   cursor: pointer;
+  z-index: 1;
 
+}
+
+.carrinhobotao:checked~.sidebar {
+  display: block;
+  transform: translateX(0%);
+  opacity: 1;
 }
 
 @media only screen and (max-width: 600px) {
@@ -146,11 +182,12 @@
     justify-content: center;
     align-items: center;
   }
-  .carrinhobotao{
+
+  .carrinhobotao {
     display: none;
   }
 
-  #icon img{
+  #icon img {
     width: 100%;
   }
 
@@ -158,23 +195,23 @@
     display: none;
   }
 
-  #topnav{
+  #topnav {
     justify-content: center;
     align-items: center;
   }
 
-  #topnav a{
+  #topnav a {
     font-size: 0px;
     margin: 0px 5px 0px 5px;
   }
 
-.opaco{
+  .opaco {
     opacity: 1;
   }
 
-  #topnav div a{
+  #topnav div a {
     display: flex;
-    opacity: 1;    
+    opacity: 1;
   }
 
   #topnav a:hover {
@@ -183,14 +220,14 @@
     color: #45C1C6;
   }
 
-  #topnav div a:hover{
+  #topnav div a:hover {
     border-radius: 20px;
     background-color: rgb(236, 240, 245);
   }
 }
 
-@media only screen and (max-width: 300px){
-  #topnav a{
+@media only screen and (max-width: 300px) {
+  #topnav a {
     font-size: 0px;
     margin: 0px 0.1px 0px 0.1px;
     padding: 6px;

@@ -20,6 +20,16 @@ function Login() {
             senha: ''
         }
     )
+    const conseguiulogar = () => {
+
+        toast.success('Entrada estabelecida com sucesso!');
+    }
+
+    const erronao = () => {
+
+        toast.success('Erro! Verifique o E-mail e/ou Senha e tente outra vez!');
+    }
+
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
         setUser({
             ...UserLogin,
@@ -32,9 +42,9 @@ function Login() {
         try {
             await login(`api/Usuarios/logar`, UserLogin, setToken)
 
-            alert('Entrada estabelecida com sucesso!')
+            toast.success('Entrada estabelecida com sucesso!');
         } catch (error) {
-            alert('Erro! Verifique o E-mail e/ou Senha e tente outra vez!')
+            toast.success('Erro! Verifique o E-mail e/ou Senha e tente outra vez!');
         }
     }
     useEffect(() => {

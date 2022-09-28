@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import useLocalStorage from 'react-use-localstorage';
 import Footer from '../../components/estaticos/footer/Footer';
 import Navbar from '../../components/estaticos/navbar/Navbar';
 import ListaProdutos from '../../components/listaComponentes/ListaComponentes';
+import Estoque from '../../models/Estoque';
 
 import './Catalogo.css'
 
 
 function Produtos() {
-
+    
     const { categoria } = useParams<{ categoria: string }>();
     const [categoriaState, setCategoriaState] = useState('TODOS');
+
     const onChangeCategory = (e: React.ChangeEvent<HTMLInputElement>) => {
         setCategoriaState(e.currentTarget.value)
         console.log(categoriaState)
@@ -22,6 +26,7 @@ function Produtos() {
             setCategoriaState(categoria)
         }
     }, [categoria])
+
     return (
         <>
             <Navbar />
