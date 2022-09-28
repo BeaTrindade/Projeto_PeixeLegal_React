@@ -10,21 +10,24 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { useNavigate, } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
+import Carrinho from "../../../paginas/carrinho/Carrinho";
 
 function Navbar() {
 
     let navigate = useNavigate();
     const [token, setToken] = useLocalStorage('token');
-
+    const [cart, setCart] = useLocalStorage('cart');
     function sair() {
         setToken('')
         alert('Você deslogou sua conta!')
         navigate('/Home')
     }
 
-    
+    useEffect(() => {
+
+    }, [cart])
 
     if (token !== "") {
         return (
@@ -34,7 +37,7 @@ function Navbar() {
                     <div className='wave1'></div>
                     <div className='wave1'></div>
                 </div>
-                
+
                 <section id="icon">
                     <section>
                         <a href="https://linktr.ee/peixelegal" target='bash'>
@@ -51,9 +54,13 @@ function Navbar() {
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1019613912817221682/nomelogo.png" alt="Logo" />
 
                     <section>
-                        <a href="/carrinho">
-                            <ShoppingCartIcon style={{ fontSize: 50 }} />
-                        </a>
+                        <input type="checkbox" className="carrinhobotao" />
+
+                        <div className="sidebar">
+                            <Carrinho width='400px' />
+                        </div>
+
+                        <ShoppingCartIcon style={{ fontSize: 50 }} />
                         <a href="/Home" onClick={sair}>
                             <LogoutIcon style={{ fontSize: 50 }} />
                         </a>
@@ -67,24 +74,25 @@ function Navbar() {
                     </a>
 
                     <a href="/Catalogo">
-                        Catálogo <MenuBookIcon className="opaco" style={{ fontSize: 30 }}/>
+                        Catálogo <MenuBookIcon className="opaco" style={{ fontSize: 30 }} />
                     </a>
 
                     <a href="/Sobrenos">
-                        Sobre nós <PeopleAltIcon className="opaco" style={{ fontSize: 30 }}/>
+                        Sobre nós <PeopleAltIcon className="opaco" style={{ fontSize: 30 }} />
                     </a>
 
                     <a href="/Contato">
-                        Contato <CallIcon className="opaco" style={{ fontSize: 30 }}/>
+                        Contato <CallIcon className="opaco" style={{ fontSize: 30 }} />
                     </a>
                     <div>
-                        <a href="/cart">
-                            <ShoppingCartIcon className="opaco" style={{ fontSize: 30 }}/>
+
+                        <a href="/cart" >
+                            <ShoppingCartIcon className="opaco" style={{ fontSize: 30 }} />
                         </a>
                     </div>
                     <div>
                         <a href="/Home" onClick={sair}>
-                            <LogoutIcon className="opaco" style={{ fontSize: 30 }}/>
+                            <LogoutIcon className="opaco" style={{ fontSize: 30 }} />
                         </a>
                     </div>
 
@@ -119,7 +127,8 @@ function Navbar() {
                     <img src="https://cdn.discordapp.com/attachments/1001812118422695987/1019613912817221682/nomelogo.png" alt="Logo" />
 
                     <section>
-                        <a href="/cart">
+                        <input type="checkbox" className="carrinhobotao" />
+                        <a>
                             <ShoppingCartIcon style={{ fontSize: 50 }} />
                         </a>
                         <a href="/login">
@@ -131,28 +140,28 @@ function Navbar() {
                 <section id="topnav">
 
                     <a href="/Home">
-                        Inicio <HomeIcon className="opaco" style={{ fontSize: 30 }}/>
+                        Inicio <HomeIcon className="opaco" style={{ fontSize: 30 }} />
                     </a>
 
                     <a href="/Catalogo">
-                        Catálogo <MenuBookIcon className="opaco" style={{ fontSize: 30 }}/>
+                        Catálogo <MenuBookIcon className="opaco" style={{ fontSize: 30 }} />
                     </a>
 
                     <a href="/Sobrenos">
-                        Sobre nós <PeopleAltIcon className="opaco" style={{ fontSize: 30 }}/>
+                        Sobre nós <PeopleAltIcon className="opaco" style={{ fontSize: 30 }} />
                     </a>
 
                     <a href="/Contato">
-                        Contato <CallIcon className="opaco" style={{ fontSize: 30 }}/>
+                        Contato <CallIcon className="opaco" style={{ fontSize: 30 }} />
                     </a>
                     <div>
                         <a href="/cart">
-                            <ShoppingCartIcon className="opaco" style={{ fontSize: 30 }}/>
+                            <ShoppingCartIcon className="opaco" style={{ fontSize: 30 }} />
                         </a>
                     </div>
                     <div>
                         <a href="/login">
-                            <AccountCircleIcon className="opaco" style={{ fontSize: 30 }}/>
+                            <AccountCircleIcon className="opaco" style={{ fontSize: 30 }} />
                         </a>
                     </div>
 

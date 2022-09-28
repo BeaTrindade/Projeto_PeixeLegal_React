@@ -2,18 +2,21 @@ import React, { ChangeEvent, useEffect, useState } from 'react';
 import useLocalStorage from 'react-use-localstorage';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Estoque from '../../models/Estoque';
-import { busca, buscaId } from '../../services/Services';
+import { api, busca, buscaId } from '../../services/Services';
 import { toast } from "react-toastify";
 import './ListaComponentes.css'
 import { Link, useParams } from 'react-router-dom';
 
 function ListaProdutos(props: any) {
     const [produtos, setProdutos] = useState<Estoque[]>([]);
-    const [token, setToken] = useLocalStorage('token');
-    const Addcarrinho = () => {
+    const [token] = useLocalStorage('token');
+    let estoques: Estoque[] = [];
+    const [cart, setCart] = useLocalStorage('cart');
 
-        toast.success('Produto adicionado ao carrinho');
-    }
+    useEffect(() => {
+
+        getProdutos()
+    }, [produtos.length, cart])
 
     async function getProdutos() {
         await busca('/api/Produtos', setProdutos, {
@@ -23,11 +26,34 @@ function ListaProdutos(props: any) {
         })
     }
 
+    function addToCart(e: React.MouseEvent<HTMLButtonElement>) {
+        e.preventDefault();
 
-    useEffect(() => {
+        const button: HTMLButtonElement = e.currentTarget;
 
-        getProdutos()
-    }, [produtos.length])
+        api.get(`api/Produtos/id/${button.value}`, {
+            headers: {
+                'Authorization': token
+            }
+        }).then(response => {
+          let aux = true;
+          estoques = JSON.parse(cart)
+          for (let index = 0; index < estoques.length; index++) {
+              if (estoques[index].id_Produto === parseInt(button.value)) {
+                  aux = false
+                  toast.warning("Produto ja esta no carrinho");
+              }
+          }
+          if (aux) {
+              estoques.push(response.data)
+              setCart(JSON.stringify(estoques))
+              toast.success("Adicionado ao carrinho");
+          }
+
+        }).catch(error => {
+            console.log(error)
+        })
+    }
 
     if (props.categoria == 'TODOS') {
         return (
@@ -41,8 +67,7 @@ function ListaProdutos(props: any) {
                         <h4 className='mg-top'>Quantidade: {produto.quantidade} </h4>
                         <h2 className='mg-toph2'>R$: {produto.valor}</h2>
                         <a href={`/produtoselecionado/${produto.id_Produto}`} id='btn-visualizar'>Visualizar</a>
-                        <button onClick={Addcarrinho} id='btn-comprar'><ShoppingCartIcon/></button>
-
+                        <button onClick={(e)=> addToCart(e)} value={produto.id_Produto} id='btn-comprar'><ShoppingCartIcon/></button>
                     </article>
 
                 ))}
@@ -64,7 +89,7 @@ function ListaProdutos(props: any) {
                                 <h4 className='mg-top'>Quantidade: {produto.quantidade} </h4>
                                 <h2 className='mg-toph2'>R$: {produto.valor}</h2>
                                 <a href={`/produtoselecionado/${produto.id_Produto}`} id='btn-comprar'>Visualizar</a>
-                                <button onClick={Addcarrinho} id='btn-comprar'><ShoppingCartIcon/></button>
+                                <button onClick={(e)=> addToCart(e)} value={produto.id_Produto} id='btn-comprar'><ShoppingCartIcon/></button>
                             </article>
                             :
                             ''

@@ -1,4 +1,3 @@
-import './ProdutoSelecionado.css';
 import React, { useEffect, useState } from 'react'
 import Footer from '../../components/estaticos/footer/Footer';
 import Navbar from '../../components/estaticos/navbar/Navbar';
@@ -9,12 +8,28 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { buscaId } from '../../services/Services';
 import { toast } from 'react-toastify';
 
+import './ProdutoSelecionado.css';
+
 function ProdutoSelecionado() {
+
 
     const carrinho = () => toast.success('Produto adicionado ao carrinho');
     let estoques: Estoque[] = [];
     const [quantity, setQuantity] = useState(1);
 
+    const logado = () => {
+
+        toast.success("Você precisa estar logado");
+    }
+
+    const jatem = () => {
+
+        toast.success("Produto ja esta no carrinho");
+    }
+    const okok = () => {
+
+        toast.success("Adicionado ao carrinho");
+    }
     function addQuantity() {
         setQuantity(quantity + 1)
     }
@@ -39,7 +54,7 @@ function ProdutoSelecionado() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.success("Você precisa estar logado");
             navigate("/login")
         }
     }, [token])
@@ -65,23 +80,20 @@ function ProdutoSelecionado() {
 
     function addToCart() {
         let aux = true;
-        alert(produtos.produto)
         estoques = JSON.parse(cart)
         for (let index = 0; index < estoques.length; index++) {
             if (estoques[index].id_Produto === produtos.id_Produto) {
                 aux = false
-                alert("produto ja esta no carrinho")
+                toast.warning("Produto ja esta no carrinho");
             }
         }
         if (aux) {
             estoques.push(produtos)
             console.log(estoques)
             setCart(JSON.stringify(estoques))
+            toast.success("Adicionado ao carrinho");
         }
-
-
     }
-
 
     return (
         <>
@@ -94,15 +106,16 @@ function ProdutoSelecionado() {
                         <h5 className='mg-top15'>{produtos?.categoria}</h5>
                         <h5 className='mg-top16'>{produtos?.descricao}</h5>
 
-                        
+
                         <h4 className='mg-top1'>Quantidade: {produtos?.quantidade}</h4>
                         <h2 className='mg-toph21'>R$: {produtos?.valor}</h2>
 
                         <div id='Dados-do-Peixe' className='detalhe'>
-                            <div className="actions">                           
-                        
+                            <div className="actions">
+
                                 <button onClick={addToCart} className="comprarSelect">
-                                    <a><ShoppingCartIcon/></a></button>
+
+                                </button>
                             </div>
                         </div>
                     </div>
