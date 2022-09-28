@@ -89,8 +89,6 @@
 
 }
 
-
-
 #icon a {
   display: flex;
   align-items: center;
@@ -111,7 +109,7 @@
 
 #icon section a:hover {
   color: #45C1C6;
-
+  cursor: pointer;
 }
 
 #icon div a {
